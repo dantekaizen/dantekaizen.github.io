@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>iGenter | POLÍTICAS DE VACACIONES</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+    <link rel="stylesheet" href="vendor/sweetalert/lib/sweet-alert.css" />
+    <link rel="stylesheet" href="vendor/toastr/build/toastr.min.css" />
+
+    <link rel="stylesheet" href="vendor/xeditable/bootstrap3-editable/css/bootstrap-editable.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="vendor/clockpicker/dist/bootstrap-clockpicker.min.css" />
+    <link rel="stylesheet" href="vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Header -->
+    <div id="header">
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i>&nbsp;MENÚ</div>
+            <div class="small-logo">
+                <span class="text-primary">iGenter México</span>
+            </div>
+        <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Aquí puedes buscar" class="form-control" name="search">
+            </div>
+        </form>
+
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="profile.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-comment" data-toggle="tooltip" title="Idiomas"></i>
+                        </a>
+
+                        <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>English</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-warning"></i>
+                                            <h5>Español</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-mail" data-toggle="tooltip" title="Notificaciones"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown animated flipInX">
+                            <li>
+                                <a>
+                                    Cruz García José Luis ha cambiado el pase "Salir un día una hora antes"
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Hoy tienes una ausencia por vacaciones
+                                </a>
+                            </li>
+                            <li class="summary"><a href="notificaciones.html">Ver todas las notificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90" data-toggle="tooltip" title="Cerrar Sesión"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="images/igenter_logo2.png" width="150px;">
+            </a>
+
+            <div class="stats-label text-color">
+                <span class="font-extra-bold font-uppercase"><a href="index.html">iGenter</a></span>
+            </div>
+        </div>
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="index.html"><span class="nav-label">INICIO</span></a>
+                </li>
+                <li>
+                    <a href="reportes.html"><span class="nav-label">REPORTES</span></a>
+                </li>
+                <li>
+                    <a href="empleados.html"><span class="nav-label">EMPLEADOS</span></a>
+                </li>
+                <li>
+                    <a href="ausencias.html"><span class="nav-label">AUSENCIAS</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="permisos.html">PERMISOS</a></li>
+                        <li><a href="vacaciones.html">VACACIONES</a></li>
+                        <li><a href="incapacidades.html">INCAPACIDADES</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="nav-label">CONFIGURACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="centros.html">CENTROS DE TRABAJO</a></li>
+                        <li><a href="turnos.html">TURNOS</a></li>
+                        <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
+                        <li><a href="puestos.html">PUESTOS</a></li>
+                        <li><a href="periodos.html">PERIODOS DE NÓMINA</a></li>
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li class="active"><a href="politicas.html">POLÍTICAS DE<br>VACACIONES</a></li>
+                        <li><a href="rutas.html">RUTAS</a></li>
+                        <li><a href="dashboard.html">DASHBOARD</a></li>
+                        <li><a href="masivo.html">SUBIDA MASIVA<br>DE EMPLEADOS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">ADMINISTRACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="parametros.html">PARÁMETROS</a></li>
+                        <li><a href="usuarios.html">USUARIOS</a></li>
+                        <li><a href="pagos.html">PAGOS</a></li>
+                        <li><a href="facturas.html">FACTURAS</a></li>
+                        <li><a href="cuenta.html">MI CUENTA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ayuda.html"><span class="nav-label">AYUDA</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div class="content animate-panel">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel collapsed">
+                        <div class="panel-heading hbuilt">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                            </div>
+                            CREAR POLÍTICA DE VACACIONES
+                        </div>
+                        <div class="panel-body">
+                            <form method="get" class="form-horizontal">
+
+                                <div class="form-group"><label class="col-sm-2 control-label obligatoriolabel">Nombre</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group m-b obligatorio col-md-12 col-sm-12"><input type="text" placeholder="Ej: Politica de gerentes" class="form-control"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label obligatoriolabel">Detalles</label>
+                                    <div class="col-md-10 col-sm-10 col-xs-12">
+                                        <table id="user" class="table table-bordered table-striped col-md-12 obligatorio" style="clear: both">
+                                            <tbody>
+                                            <tr>
+                                                <td>Año de antiguedad</td>
+                                                <td>Días de vacaciones</td>
+                                                <td>Días de prima vacacional</td>
+                                                <td>Porcentaje de prima vacacional</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input id="demo2" type="text"  name="demo2" value="1"></td>
+                                                <td><input id="demo2" type="text"  name="demo2" value="6"></td>
+                                                <td><input id="demo2" type="text"  name="demo2" value="6"></td>
+                                                <td><input id="demo2" type="text"  name="demo2" value="25%"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-center"><button type="button" class="btn w-xs btn-info btn-sm">AGREGAR FILA</button></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="button" class="btn w-xs btn-success btn-sm nuevoperiodo">LISTO</button>
+                                    <br><br>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-body">
+                            <h3> Política Gerentes</h3><br>
+                            <div class="table-responsive">
+                                <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Año de antiguedad</th>
+                                        <th>Días de vacaciones</th>
+                                        <th>Días de prima vacacional</th>
+                                        <th>Porcentaje de prima vacacional</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>8</td>
+                                        <td>8</td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>12</td>
+                                        <td>12</td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>14</td>
+                                        <td>14</td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>16</td>
+                                        <td>16</td>
+                                        <td>45%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>16</td>
+                                        <td>16</td>
+                                        <td>45%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>18</td>
+                                        <td>18</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center">
+                            <div class="btn-group text-center">
+                                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">Editar Política <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Modificar Política</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Eliminar Política</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer contact-footer">
+                            <div class="row">
+                                <div class="col-md-12"> <div class="contact-stat text-center"><span>Fecha de inicio: </span> <strong>12/10/2016</strong></div> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-body">
+                            <h3> Política Subgerentes</h3><br>
+                            <div class="table-responsive">
+                                <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Año de antiguedad</th>
+                                        <th>Días de vacaciones</th>
+                                        <th>Días de prima vacacional</th>
+                                        <th>Porcentaje de prima vacacional</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>6</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>8</td>
+                                        <td>8</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>12</td>
+                                        <td>12</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>14</td>
+                                        <td>14</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>16</td>
+                                        <td>16</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center">
+                            <div class="btn-group text-center">
+                                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">Editar Política <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Modificar Política</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Eliminar Política</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer contact-footer">
+                            <div class="row">
+                                <div class="col-md-12"> <div class="contact-stat text-center"><span>Fecha de inicio: </span> <strong>12/10/2016</strong></div> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel collapsed">
+                        <div class="panel-heading hbuilt">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                            </div>
+                            ASIGNAR POLÍTICA DE VACACIONES A EMPLEADOS
+                        </div>
+                        <div class="panel-body">
+                            <form method="get" class="form-horizontal">
+
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Selecciona Uno o Múltiples Empleados</label>
+                                    <div class="col-sm-8">
+                                        <select class="js-source-states-2" multiple="multiple" style="width: 100%">
+                                                <option value="3544">Corona Ortíz Ángel</option>
+                                                <option value="5677">Dávila Montero Claudia Valeria</option>
+                                                <option value="5877">Cortez Arias Baltazar </option>
+                                                <option value="3544">Cruz García José Luis </option>
+                                                <option value="5677">Castro Sánchez Luis </option>
+                                                <option value="5877">Flores Martínez Alma Estela </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group"><label class="col-sm-2 control-label">Asignar Política de Vacaciones </label>
+                                    <div class="col-sm-8">
+                                        <select class="js-source-states" style="width: 100%">
+                                            <optgroup label="Periodos de nómina">
+                                                <option value="m1">Política por ley</option>
+                                                <option value="m1">Política Gerentes</option>
+                                                <option value="m1">Política Subgerentes</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            <div class="text-center">
+                                <button type="button" class="btn w-xs btn-success btn-sm asignarperiodo">LISTO</button>
+                                <br><br>
+                            </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <br><br><br>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                D.R. iGenter México S. de R.L. de C.V., 2017. Nuevo León No. 202 Piso 5, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX.
+                Prohibida la reproducción total o parcial de esta obra sin la previa autorización de su titular.
+            </span>
+        </footer>
+    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+    <script src="vendor/moment/moment.js"></script>
+    <script src="vendor/xeditable/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script src="vendor/select2-3.5.2/select2.min.js"></script>
+    <script src="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="vendor/clockpicker/dist/bootstrap-clockpicker.min.js"></script>
+    <script src="vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="vendor/sweetalert/lib/sweet-alert.min.js"></script>
+    <script src="vendor/toastr/build/toastr.min.js"></script>
+
+<!-- App scripts -->
+
+    <script src="scripts/homer.js"></script>
+
+<script>
+
+    $(function(){
+
+        $('#datepicker').datepicker();
+        $("#datepicker").on("changeDate", function(event) {
+            $("#my_hidden_input").val(
+                    $("#datepicker").datepicker('getFormattedDate')
+            )
+        });
+
+        $('#datapicker2').datepicker();
+        $('#datepicker .input-group.date').datepicker({ });
+        $('#datepicker .input-daterange').datepicker({ });
+
+        $("#demo1").TouchSpin({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            decimals: 2,
+            boostat: 5,
+            maxboostedstep: 10,
+        });
+
+        $("#numeroantiguedad").TouchSpin({
+            verticalbuttons: true
+        });
+
+
+        $("#numerovacaciones").TouchSpin({
+            verticalbuttons: true
+        });
+
+        $("#numerosabados").TouchSpin({
+            verticalbuttons: true
+        });
+
+        $("#numeroprima").TouchSpin({
+            verticalbuttons: true
+        });
+
+
+
+        $("#demo3").TouchSpin({
+            postfix: '%'
+        });
+
+        $("#demo4").TouchSpin({
+            postfix: "a button",
+            postfix_extraclass: "btn btn-default"
+        });
+
+        $(".js-source-states").select2();
+        $(".js-source-states-2").select2();
+
+        //turn to inline mode
+        $.fn.editable.defaults.mode = 'inline';
+
+        //defaults
+        $.fn.editable.defaults.url = '#';
+
+        //editables
+        $('#username1').editable({
+            url: '#',
+            type: 'text',
+            pk: 1,
+            name: 'username',
+            title: 'Enter username'
+        });
+
+
+        //editables
+        $('#username2').editable({
+            url: '#',
+            type: 'text',
+            pk: 2,
+            name: 'username',
+            title: 'Enter username'
+        });
+
+        //editables
+        $('#username3').editable({
+            url: '#',
+            type: 'text',
+            pk: 3,
+            name: 'username',
+            title: 'Enter username'
+        });
+
+
+
+        $('#firstname').editable({
+            validate: function(value) {
+                if($.trim(value) == '') return 'This field is required';
+            }
+        });
+
+        $('#sex').editable({
+            prepend: "not selected",
+            source: [
+                {value: 1, text: 'Male'},
+                {value: 2, text: 'Female'}
+            ],
+            display: function(value, sourceData) {
+                var colors = {"": "gray", 1: "green", 2: "blue"},
+                        elem = $.grep(sourceData, function(o){return o.value == value;});
+
+                if(elem.length) {
+                    $(this).text(elem[0].text).css("color", colors[value]);
+                } else {
+                    $(this).empty();
+                }
+            }
+        });
+
+        $('#dob').editable();
+
+        $('#event').editable({
+            placement: 'right',
+            combodate: {
+                firstItem: 'name'
+            }
+        });
+
+        $('#comments').editable({
+            showbuttons: 'bottom'
+        });
+
+        $('#fruits').editable({
+            pk: 1,
+            limit: 3,
+            source: [
+                {value: 1, text: 'banana'},
+                {value: 2, text: 'peach'},
+                {value: 3, text: 'apple'},
+                {value: 4, text: 'watermelon'},
+                {value: 5, text: 'orange'}
+            ]
+        });
+
+        $('#user .editable').on('hidden', function(e, reason){
+            if(reason === 'save' || reason === 'nochange') {
+                var $next = $(this).closest('tr').next().find('.editable');
+                if($('#autoopen').is(':checked')) {
+                    setTimeout(function() {
+                        $next.editable('show');
+                    }, 300);
+                } else {
+                    $next.focus();
+                }
+            }
+        });
+
+        // ClockPicker
+        $('.clockpicker').clockpicker({autoclose: true});
+
+        // DateTimePicker
+        $('#datetimepicker1').datetimepicker();
+
+    });
+</script>
+
+<script>
+
+    $(function () {
+
+        // ALERTA PARA CREAR NUEVO PERIODO DE NÓMINA
+        $('.nuevoperiodo').click(function(){
+            swal({
+                title: "¡LISTO!",
+                text: "El nuevo periodo de nómina se creo correctamente",
+                type: "success"
+            });
+        });
+
+        // ALERTA PARA ASIGNAR PERIODO DE NÓMINA
+        $('.asignarperiodo').click(function(){
+            swal({
+                title: "¡LISTO!",
+                text: "El periodo de nómina se asigno correctamente",
+                type: "success"
+            });
+        });
+
+        // ALERTA AL ELIMINAR PERIODO DE NÓMINA
+        $('.eliminarperiodo').click(function () {
+            swal({
+                        title: "¿Estás seguro que deseas eliminar este periodo de nómina?",
+                        text: "No podras recuperar este periodo de nómina",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Sí, eliminar"
+                    },
+                    function () {
+                        swal("Booyah!");
+                    });
+        });
+
+
+    });
+</script>
+
+</body>
+</html>

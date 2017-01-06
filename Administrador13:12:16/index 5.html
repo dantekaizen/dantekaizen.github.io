@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>iGenter | RELOJ CHECADOR</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+
+    <!-- Estilos de tipografia de clima -->
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons-wind.min.css" />
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons.min.css" />
+
+    <link rel="stylesheet" href="styles/style5.css">
+    <link rel="stylesheet" href="styles/clima5.css">
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Header -->
+    <div id="header">
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i>&nbsp;MENÚ</div>
+            <div class="small-logo">
+                <span class="text-primary">iGenter México</span>
+            </div>
+        <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Aqui puedes buscar •‿•" class="form-control" name="search">
+            </div>
+        </form>
+
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="profile.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-comment"></i>
+                        </a>
+
+                        <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>English</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-warning"></i>
+                                            <h5>Español</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-mail"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown animated flipInX">
+                            <li>
+                                <a>
+                                    Cruz García José Luis ha cambiado el pase "Salir un día una hora antes"
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Hoy tienes una ausencia por vacaciones
+                                </a>
+                            </li>
+                            <li class="summary"><a href="notificaciones.html">Ver todas las notificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="images/igenter_logo2.png" width="150px;">
+            </a>
+
+            <div class="stats-label text-color">
+                <span class="font-extra-bold font-uppercase"><a href="index.html">iGenter</a></span>
+            </div>
+        </div>
+            <ul class="nav" id="side-menu">
+            	<li>
+                    <a href="index.html"><span class="nav-label">INICIO</span></a>
+                </li>
+                <li>
+                    <a href="reportes.html"><span class="nav-label">REPORTES</span></a>
+                </li>
+                <li>
+                    <a href="empleados.html"><span class="nav-label">EMPLEADOS</span></a>
+                </li>
+                <li>
+                    <a href="ausencias.html"><span class="nav-label">AUSENCIAS</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="vacaciones.html">VACACIONES</a></li>
+                        <li><a href="incapacidades.html">INCAPACIDADES</a></li>
+                        <li><a href="permisos.html">PERMISOS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">CONFIGURACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="centros.html">CENTROS DE TRABAJO</a></li>
+                        <li><a href="turnos.html">TURNOS</a></li>
+                        <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
+                        <li><a href="puestos.html">PUESTOS</a></li>
+                        <li><a href="periodos.html">PERIODOS DE NÓMINA</a></li>
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="politicas.html">POLÍTICAS DE<br>VACACIONES</a></li>
+                        <li><a href="rutas.html">RUTAS</a></li>
+                        <li><a href="dashboard.html">DASHBOARD</a></li>
+                        <li><a href="masivo.html">SUBIDA MASIVA<br>DE EMPLEADOS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">ADMINISTRACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="parametros.html">PARÁMETROS</a></li>
+                        <li><a href="usuarios.html">USUARIOS</a></li>
+                        <li><a href="pagos.html">PAGOS</a></li>
+                        <li><a href="facturas.html">FACTURAS</a></li>
+                        <li><a href="cuenta.html">MI CUENTA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ayuda.html"><span class="nav-label">AYUDA</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div class="content animate-panel">
+
+            <div class="row">
+                <div class="col-lg-12 text-center m-t-md">
+                                    <h1 id="empresanombre"> iGenter México S. de R.L. de C.V.</h1>
+                    <h1 id="hora">
+                    <script type="text/javascript">
+                           function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();}
+                    </script>
+                        <div id="reloj"></div>
+                    </h1>
+
+                    <h5 id="fecha">
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            function makeArray() {
+                            for (i = 0; i<makeArray.arguments.length; i++)
+                            this[i + 1] = makeArray.arguments[i];}
+                            var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+                            'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+                            var date = new Date();
+                            var day = date.getDate();
+                            var month = date.getMonth() + 1;
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+                            document.write( + day + " de " + months[month] + " del " + year);
+                            //]]>
+                        </script>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div  class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide">Mostrar más&nbsp;<i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            INCIDENCIAS DE HOY
+                        </div>
+                        <div id="panel1" class="panel-body">
+                            <div class="table-responsive">
+                                <table cellpadding="1" cellspacing="1" class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>NOMBRE</th>
+                                        <th>CENTRO DE TRABAJO</th>
+                                        <th>HORA DE ENTRADA</th>
+                                        <th>INCIDENCIA DE HOY</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Luis Lugo</td>
+                                        <td>Nuevo León 202</td>
+                                        <td>9:00 am</td>
+                                        <td>ENTRADA: 9:10 am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gerardo Muñoz</td>
+                                        <td>Nuevo León 202</td>
+                                        <td>8:00 am</td>
+                                        <td>ENTRADA: 8:07 am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giovanni Moreno</td>
+                                        <td>Nuevo León 202</td>
+                                        <td>9:00 am</td>
+                                        <td>ENTRADA: 10:30 am</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide">Mostrar más&nbsp;<i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            ENTRADAS HOY
+                        </div>
+                        <div id="panel2" class="panel-body">
+                            <div class="m-t-md">
+                                <canvas id="lineOptions" height="60"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- FUERZA LABORAL --> 
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                                <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide">Mostrar más&nbsp;<i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            FUERZA LABORAL
+                        </div>
+                        <div id="panel4" class="panel-body no-padding">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <span class="badge badge-primary">25</span>
+                                    Total de empleados
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge badge-success">19</span>
+                                    Empleados laborando en este momento
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge badge-danger">3</span>
+                                    Empleados que aún no entran a laborar y deberian estar laborando
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge badge-Warning2">2</span>
+                                    Empleados que no tienen que laborar en este momento
+                                </li>    
+                                <li class="list-group-item">
+                                    <span class="badge badge-warning">1</span>
+                                    Ausencias programadas para hoy
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- AHORRO EN INCIDENCIAS --> 
+                <div class="col-lg-3">
+                    <div class="hpanel">
+                                <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            AHORROS PERIODO ACTUAL
+                        </div>
+                        <div id="panel5" class="panel-body text-center h-200">
+                            <i class="pe-7s-cash fa-4x"></i>
+
+                            <h1 class="m-xs">$102 MXN</h1>
+                             <h3 id="ahorros" class="font-extra-bold no-margins">
+                            AHORROS POR INCIDENCIAS
+                            </h3>
+                        </div>
+                    </div>
+                </div>   
+
+                <!-- AUSENCIA DE EMPLEADOS --> 
+                <div class="col-lg-3">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            EMPLEADOS AUSENTES QUE DEBEN ENCONTRASE LABORANDO
+                        </div>
+                        <div id="panel6" class="panel-body">
+                            <div class="table-responsive">
+                            <table cellpadding="1" cellspacing="1" class="table table-condensed">
+                                <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Fecha de Entrada</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Jeremías</td>
+                                    <td>9:00am</td>
+                                </tr>
+                                <tr>
+                                    <td>Ignacia</td>
+                                    <td>9:00am</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- CLIMA --> 
+                <div class="col-lg-3">
+                    <div class="hpanel">
+                                <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            CLIMA EN TU CENTRO DE TRABAJO
+                        </div>
+                        <div id="panel7" class="panel-body text-center h-200 moradito">
+                            <p> Nuevo León 202<p>
+                            <br>
+
+                                <svg version="1.1"
+                                       id="cloudRainMoonAltFill"
+                                       class="climacon climacon_cloudMoonRainAltFill"
+                                       viewBox="15 15 70 70">
+                                    <g class="climacon_iconWrap climacon_iconWrap-cloudRainSunAlt">
+                                      <g class="climacon_wrapperComponent climacon_wrapperComponent-moon climacon_componentWrap-moon_cloud">
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_sunBody"
+                                              d="M61.023,50.641c-6.627,0-11.999-5.372-11.999-11.998c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788c0,4.418,3.582,7.999,8,7.999c0.614,0,1.212-0.076,1.788-0.208c0.133,0.717,0.211,1.452,0.211,2.208C73.021,45.269,67.649,50.641,61.023,50.641z"/>
+                                        <path
+                                              class="climacon_component climacon_component-fill climacon_component-fill_moon"
+                                              fill="#FFFFFF"
+                                              d="M59.235,30.851c-3.556,0.813-6.211,3.989-6.211,7.792c0,4.417,3.581,7.999,7.999,7.999c3.802,0,6.979-2.655,7.791-6.211C63.961,39.527,60.139,35.705,59.235,30.851z"/>
+                                      </g>
+                                      <g class="climacon_wrapperComponent climacon_wrapperComponent-rain climacon_wrapperComponent-rain_alt">
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- alt"
+                                              d="M50.001,58.568l3.535,3.535c1.95,1.953,1.95,5.119,0,7.07c-1.953,1.953-5.119,1.953-7.07,0c-1.953-1.951-1.953-5.117,0-7.07L50.001,58.568z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- alt"
+                                              d="M50.001,58.568l3.535,3.535c1.95,1.953,1.95,5.119,0,7.07c-1.953,1.953-5.119,1.953-7.07,0c-1.953-1.951-1.953-5.117,0-7.07L50.001,58.568z"/>
+                                      </g>
+
+                                      <g class="climacon_componentWrap climacon_componentWrap_cloud">
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_cloud"
+                                              d="M43.945,65.639c-8.835,0-15.998-7.162-15.998-15.998c0-8.836,7.163-15.998,15.998-15.998c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.338-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12c0,6.625-5.371,11.998-11.998,11.998C57.168,65.639,47.143,65.639,43.945,65.639z"/>
+                                        <path
+                                              class="climacon_component climacon_component-fill climacon_component-fill_cloud"
+                                              fill="#FFFFFF"
+                                              d="M59.943,61.639c4.418,0,8-3.582,8-7.998c0-4.417-3.582-8-8-8c-1.601,0-3.082,0.481-4.334,1.291c-1.23-5.316-5.973-9.29-11.665-9.29c-6.626,0-11.998,5.372-11.998,11.999c0,6.626,5.372,11.998,11.998,11.998C47.562,61.639,56.924,61.639,59.943,61.639z"/>
+                                      </g>
+                                    </g>
+                                </svg><!-- cloudRainMoonAltFill -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="hpanel">
+                                <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            CLIMA EN TU CENTRO DE TRABAJO
+                        </div>
+                        <div id="panel8" class="panel-body text-center h-200 moradito">
+                            <p> Parque Lira<p>
+                            <br>
+                              <svg version="1.1" id="cloudFogMoonAlt"  class="climacon climacon_cloudFogMoonAlt" viewBox="15 15 70 70">
+                                    <clipPath id="moonCloudFillClip">
+                                      <path
+                                            d="M0,0v100h100V0H0z M60.943,46.641c-4.418,0-7.999-3.582-7.999-7.999c0-3.803,2.655-6.979,6.211-7.792c0.903,4.854,4.726,8.676,9.579,9.58C67.922,43.986,64.745,46.641,60.943,46.641z"/>
+                                    </clipPath>
+                                    <clipPath id="newMoonCloudFillClip">
+                                      <path d="M15,15v70h70V15H15z M59.943,65.638c-2.775,0-12.801,0-15.998,0c-8.836,0-15.998-7.162-15.998-15.998c0-8.835,7.162-15.998,15.998-15.998c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.338-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12C71.941,60.265,66.57,65.638,59.943,65.638z"/>
+                                    </clipPath>
+                                    <g class="climacon_iconWrap climacon_iconWrap-cloudFogMoon">
+                                      <g clip-path="url(#newMoonCloudFillClip)">
+                                        <g class="climacon_wrapperComponent climacon_wrapperComponent-moon climacon_componentWrap-moon_cloud" clip-path="url(#moonCloudFillClip)">
+                                          <path
+                                                class="climacon_component climacon_component-stroke climacon_component-stroke_sunBody"
+                                                d="M61.023,50.641c-6.627,0-11.999-5.372-11.999-11.998c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788c0,4.418,3.582,7.999,8,7.999c0.614,0,1.212-0.076,1.788-0.208c0.133,0.717,0.211,1.452,0.211,2.208C73.021,45.269,67.649,50.641,61.023,50.641z"/>
+                                        </g>
+                                      </g>
+                                      <g class="climacon_wrapperComponent climacon_wrapperComponent-Fog">
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M29.177,55.641c-0.262-0.646-0.473-1.314-0.648-2h43.47c0,0.685-0.069,1.349-0.181,2H29.177z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M36.263,35.643c2.294-1.271,4.93-1.999,7.738-1.999c2.806,0,5.436,0.73,7.728,1.999H36.263z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M28.142,47.642c0.085-0.682,0.218-1.347,0.387-1.999h40.396c0.552,0.613,1.039,1.281,1.455,1.999H28.142z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M29.177,43.643c0.281-0.693,0.613-1.359,0.984-2h27.682c0.04,0.068,0.084,0.135,0.123,0.205c0.664-0.114,1.339-0.205,2.033-0.205c2.451,0,4.729,0.738,6.627,2H29.177z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M31.524,39.643c0.58-0.723,1.225-1.388,1.92-2h21.123c0.689,0.61,1.326,1.28,1.902,2H31.524z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M71.816,51.641H28.142c-0.082-0.656-0.139-1.32-0.139-1.999h43.298C71.527,50.285,71.702,50.953,71.816,51.641z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M71.301,57.641c-0.246,0.699-0.555,1.367-0.921,2H31.524c-0.505-0.629-0.957-1.299-1.363-2H71.301z"/>
+                                        <path
+                                              class="climacon_component climacon_component-stroke climacon_component-stroke_fogLine"
+                                              d="M33.444,61.641h35.48c-0.68,0.758-1.447,1.435-2.299,2H36.263C35.247,63.078,34.309,62.4,33.444,61.641z"/>
+                                      </g>
+                                    </g>
+                                  </svg><!--cloudFogMoonAlt -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="hpanel">
+                                <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            CLIMA EN TU CENTRO DE TRABAJO
+                        </div>
+                        <div id="panel9" class="panel-body text-center h-200 moradito">
+                            <p> Corporativo<p>
+                            <br>
+                            <svg version="1.1" id="cloudLightningMoon" class="climacon climacon_cloudLightningMoon"viewBox="15 15 70 70">
+                                <clipPath id="moonCloudFillClip">
+                                  <path
+                                        d="M0,0v100h100V0H0z M60.943,46.641c-4.418,0-7.999-3.582-7.999-7.999c0-3.803,2.655-6.979,6.211-7.792c0.903,4.854,4.726,8.676,9.579,9.58C67.922,43.986,64.745,46.641,60.943,46.641z"/>
+                                </clipPath>
+                                <clipPath id="cloudFillClip">
+                                  <path d="M15,15v70h70V15H15z M59.943,61.639c-3.02,0-12.381,0-15.999,0c-6.626,0-11.998-5.371-11.998-11.998c0-6.627,5.372-11.999,11.998-11.999c5.691,0,10.434,3.974,11.665,9.29c1.252-0.81,2.733-1.291,4.334-1.291c4.418,0,8,3.582,8,8C67.943,58.057,64.361,61.639,59.943,61.639z"/>
+                                </clipPath>
+
+                                <g class="climacon_iconWrap climacon_iconWrap-cloudLightningMoon">
+                                  <g clip-path="url(#cloudFillClip)">
+                                    <g class="climacon_wrapperComponent climacon_wrapperComponent-moon climacon_componentWrap-moon_cloud" clip-path="url(#moonCloudFillClip)">
+                                      <path
+                                            class="climacon_component climacon_component-stroke climacon_component-stroke_sunBody"
+                                            d="M61.023,50.641c-6.627,0-11.999-5.372-11.999-11.998c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788c0,4.418,3.582,7.999,8,7.999c0.614,0,1.212-0.076,1.788-0.208c0.133,0.717,0.211,1.452,0.211,2.208C73.021,45.269,67.649,50.641,61.023,50.641z"/>
+                                    </g>
+                                  </g>            
+                                  <g class="climacon_wrapperComponent climacon_wrapperComponent-lightning">
+                                    <polygon
+                                             class="climacon_component climacon_component-stroke climacon_component-stroke_lightning"
+                                             points="48.001,51.641 57.999,51.641 52,61.641 58.999,61.641 46.001,77.639 49.601,65.641 43.001,65.641 "/>
+                                  </g>
+                                  <g class="climacon_wrapperComponent climacon_wrapperComponent-cloud">
+                                    <path
+                                          class="climacon_component climacon_component-stroke climacon_component-stroke_cloud"
+                                          d="M59.999,65.641c-0.28,0-0.649,0-1.062,0l3.584-4.412c3.182-1.057,5.478-4.053,5.478-7.588c0-4.417-3.581-7.998-7.999-7.998c-1.602,0-3.083,0.48-4.333,1.29c-1.231-5.316-5.974-9.29-11.665-9.29c-6.626,0-11.998,5.372-11.998,12c0,5.446,3.632,10.039,8.604,11.503l-1.349,3.777c-6.52-2.021-11.255-8.098-11.255-15.282c0-8.835,7.163-15.999,15.998-15.999c6.004,0,11.229,3.312,13.965,8.204c0.664-0.114,1.338-0.205,2.033-0.205c6.627,0,11.999,5.371,11.999,11.999C71.999,60.268,66.626,65.641,59.999,65.641z"/>
+                                  </g>
+                                </g>
+                            </svg><!--cloudLightningMoon -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIVISAS --> 
+                <div class="col-lg-3">
+                    <div class="hpanel">
+                                <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            TIPO DE MONEDA
+                        </div>
+                        <div id="panel10" class="panel-body text-center h-200">
+                            <h4>DIVISA</h4>
+                            <h1>MXN</h1>
+                            <br>
+                            <button class="btn btn-primary btn-outline" type="button"><i class="fa fa-usd" aria-hidden="true"></i> <br/>MXN</button>
+                            <button class="btn btn-primary btn-outline" type="button"><i class="fa fa-usd" aria-hidden="true"></i> <br/>USD</button>
+                            <button class="btn btn-primary btn-outline" type="button"><i class="fa fa-eur" aria-hidden="true"></i> <br/>EUR</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <!-- DÍAS DESTIVOS --> 
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide">Mostrar más&nbsp;<i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            PRÓXIMOS DÍAS FESTIVOS
+                        </div>
+                        <div id="panel11" class="panel-body">
+                            <div class="table-responsive">
+                            <table cellpadding="1" cellspacing="1" class="table table-condensed table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Día de Independencia</td>
+                                    <td>16 de Septiembre</td>
+                                </tr>
+                                <tr>
+                                    <td>Revolución Mexicana</td>
+                                    <td>21 de Noviembre</td>
+                                </tr>
+                                <tr>
+                                    <td>Día de la Virgen de Guadalupe</td>
+                                    <td>12 de Diciembre</td>
+                                </tr>
+                                <tr>
+                                    <td>Noche Buena</td>
+                                    <td>24 de Diciembre</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DÍAS DESTIVOS --> 
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                                <a class="showhide">Mostrar más&nbsp;<i class="fa fa-chevron-up"></i></a>
+                                <a class="closebox"><i class="fa fa-times"></i></a>
+                            </div>
+                            PRÓXIMOS CUMPLEAÑOS
+                        </div>
+                        <div id="panel12" class="panel-body">
+                            <div class="table-responsive">
+                            <table cellpadding="1" cellspacing="1" class="table table-condensed">
+                                <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Fecha de cumpleaños</th>
+                                    <th>Años a cumplir</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Giovanni Moreno</td>
+                                    <td>02/09</td>
+                                    <td>25 años</td>
+                                </tr>
+                                <tr>
+                                    <td>Gerardo Muñoz</td>
+                                    <td>22/10</td>
+                                    <td>28 años</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- URL DE EMPLEADOS --> 
+
+                    <div class="col-lg-12">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide">Mostrar más&nbsp;<i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
+                                </div>
+                                URL de inicio de Sesión de tus empleados
+                            </div>
+                            <div id="panel12" class="panel-body text-center">
+                                <h4><a href="www.nuestroempleo.com/empresa/igenter/relojchecador/empleados" target="_blank">www.nuestroempleo.com/empresa/igenter/relojchecador/empleados</a></h4>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        <br><br><br>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                D.R. iGenter México S. de R.L. de C.V., 2017. Nuevo León No. 202 Piso 5, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX.
+                Prohibida la reproducción total o parcial de esta obra sin la previa autorización de su titular.
+            </span>
+        </footer>
+    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+<!-- App scripts -->
+    <script src="scripts/homer.js"></script>
+    <script src="scripts/charts.js"></script>
+
+<script>
+
+    $(function () {
+    	pintarGrafica2("#3ca654", "#3ca654", "#3ca654");
+
+        setTimeout(function(){
+           pintarGrafica('#77dd77');
+        },700)  
+
+        // Wait until all panels will be render
+        // Remove setTimeout if you don't use animate-panel effect
+
+        function pintarGrafica(parametro){
+            c3.generate({
+                bindto: '#gauge',
+                data:{
+                    columns: [
+                        ['data', 88]
+                    ],
+
+                    type: 'gauge'
+                },
+                color:{
+                    pattern: [parametro, '#BABABA']
+
+                }
+            });
+        };      
+
+        function pintarGrafica2(color, color2, color3){
+
+	        var lineData = {
+	            labels: ["7:58", "7:59", "8:00", "8:01"],
+	            datasets: [
+	                {
+	                    label: "Example dataset",
+	                    fillColor: color,
+	                    strokeColor: color2,
+	                    pointColor: color3,
+	                    pointStrokeColor: "#fff",
+	                    pointHighlightFill: "#fff",
+	                    pointHighlightStroke: "#966fd6",
+	                    data: [8,6,6,5]
+	                }
+	            ]
+	        };
+
+	        var lineOptions = {
+	            scaleShowGridLines : true,
+	            scaleGridLineColor : "rgba(0,0,0,.03)",
+	            scaleGridLineWidth : 1,
+	            bezierCurve : false,
+	            pointDot : true,
+	            pointDotRadius : 5,
+	            pointDotStrokeWidth : 1,
+	            pointHitDetectionRadius : 20,
+	            datasetStroke : false,
+	            datasetStrokeWidth : 1,
+	            datasetFill : true,
+	            responsive: true,
+	            tooltipTemplate: "<%= value %>",
+	            showTooltips: true,
+	            onAnimationComplete: function()
+	            {
+	                this.showTooltip(this.datasets[0].points, true);
+	            },
+	            tooltipEvents: []
+	        };
+
+	        var ctx = document.getElementById("lineOptions").getContext("2d");
+	        var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
+		};
+			   
+			$('.fa-eyedropper').click(function(e){
+                    console.log($(e.target));
+					 	  var fondito = $(e.target).attr('name'); 
+							$("*").css('color', fondito); 
+							$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo, .label-success, span.badge").css('color', '#fff');
+                            $(".fa-eyedropper[name*='#1bb51b']").css('color', '#1bb51b');
+                            $(".fa-eyedropper[name*='#ea0943']").css('color', '#ea0943');
+                            $(".fa-eyedropper[name*='#323edc']").css('color', '#323edc');
+                            $(".fa-eyedropper[name*='#e89115']").css('color', '#e89115');
+                            $(".fa-eyedropper[name*='#650afb']").css('color', '#650afb');
+                            $(".fa-eyedropper[name*='#2e2e2e']").css('color', '#2e2e2e');
+							$(".label-success").css('background-color',fondito );
+								
+								pintarGrafica(fondito);
+								pintarGrafica2(fondito,fondito,fondito); 
+					
+				}); 
+
+
+			/* metiendo el color directamente 
+
+
+					$('.btn-amarillo').click(function() {
+	    	$('.relleno').css({ fill: "#ffb606" });
+			var currentclass = $(this).attr('class');
+
+			$('.relleno' + currentclass ).css({ fill: "#ffb606" });
+			$("h1#hora, h3#fecha, #ahorros, ul#side-menu li a, tr, td").css('color', '#ffb606');
+			$(".label-success").css('background-color','#ffb606')
+			$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo").css('color', '#ff');
+
+			pintarGrafica("#ffb606");
+			pintarGrafica2("#ffb606","#ffb606","#ffb606")
+		});  */
+
+				/* EXP 
+		$('#html5colorpicker').on('change',function(e){
+				 	var fondito = $(this).val();
+				 	console.log(fondito);
+						$("h1#hora, h3#fecha, #ahorros, ul#side-menu li a, tr, td, .label-success").css('color', fondito );
+						$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo, .label-success").css('color', '#fff');
+						$('.relleno').css({ fill: fondito });
+						$(".label-success").css('background-color',fondito )
+							
+							pintarGrafica(fondito);
+							pintarGrafica2(fondito,fondito,fondito)
+				
+			}); */
+
+	});
+</script>
+
+</body>
+</html>

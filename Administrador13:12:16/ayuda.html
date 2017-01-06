@@ -1,0 +1,539 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>iGenter | PREGUNTAS FRECUENTES</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+
+
+    <link rel="stylesheet" href="vendor/xeditable/bootstrap3-editable/css/bootstrap-editable.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="vendor/clockpicker/dist/bootstrap-clockpicker.min.css" />
+    <link rel="stylesheet" href="vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Header -->
+    <div id="header">
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i>&nbsp;MENÚ</div>
+            <div class="small-logo">
+                <span class="text-primary">iGenter México</span>
+            </div>
+        <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Aquí puedes buscar" class="form-control" name="search">
+            </div>
+        </form>
+
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="profile.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-comment" data-toggle="tooltip" title="Idiomas"></i>
+                        </a>
+
+                        <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>English</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-warning"></i>
+                                            <h5>Español</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-mail" data-toggle="tooltip" title="Notificaciones"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown animated flipInX">
+                            <li>
+                                <a>
+                                    Cruz García José Luis ha cambiado el pase "Salir un día una hora antes"
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Hoy tienes una ausencia por vacaciones
+                                </a>
+                            </li>
+                            <li class="summary"><a href="notificaciones.html">Ver todas las notificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90" data-toggle="tooltip" title="Cerrar Sesión"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="images/igenter_logo2.png" width="150px;">
+            </a>
+
+            <div class="stats-label text-color">
+                <span class="font-extra-bold font-uppercase"><a href="index.html">iGenter</a></span>
+            </div>
+        </div>
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="index.html"><span class="nav-label">INICIO</span></a>
+                </li>
+                <li>
+                    <a href="reportes.html"><span class="nav-label">REPORTES</span></a>
+                </li>
+                <li>
+                    <a href="empleados.html"><span class="nav-label">EMPLEADOS</span></a>
+                </li>
+                <li>
+                    <a href="ausencias.html"><span class="nav-label">AUSENCIAS</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="permisos.html">PERMISOS</a></li>
+                        <li><a href="vacaciones.html">VACACIONES</a></li>
+                        <li><a href="incapacidades.html">INCAPACIDADES</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">CONFIGURACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="centros.html">CENTROS DE TRABAJO</a></li>
+                        <li><a href="turnos.html">TURNOS</a></li>
+                        <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
+                        <li><a href="puestos.html">PUESTOS</a></li>
+                        <li><a href="periodos.html">PERIODOS DE NÓMINA</a></li>
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="politicas.html">POLÍTICAS DE<br>VACACIONES</a></li>
+                        <li><a href="rutas.html">RUTAS</a></li>
+                        <li><a href="dashboard.html">DASHBOARD</a></li>
+                        <li><a href="masivo.html">SUBIDA MASIVA<br>DE EMPLEADOS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">ADMINISTRACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="parametros.html">PARÁMETROS</a></li>
+                        <li><a href="usuarios.html">USUARIOS</a></li>
+                        <li><a href="pagos.html">PAGOS</a></li>
+                        <li><a href="facturas.html">FACTURAS</a></li>
+                        <li><a href="cuenta.html">MI CUENTA</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="ayuda.html"><span class="nav-label">AYUDA</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div class="content animate-panel">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hpanel">
+                            <div class="panel-body">
+                                <div class="">Aquí podrás encontrar las preguntas más frecuentes sobre la configuración y manejo del <strong>Reloj Checador.</strong></div>
+                                <div class="m-t-sm">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Buscar..">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hpanel panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel-body">
+                                <h4 class="m-t-none m-b-none">Preguntas de configuración</h4>
+                                <small class="text-muted">Como dar de altas centros de trabajo, turnos y empleados</small>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q1" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Qué es un centro de trabajo?
+                                </a>
+                                <div id="q1" class="panel-collapse collapse">
+                                    <hr>Un Centro de trabajo es un lugar donde laboran empleados Ej: restaurante, tienda, oficinas.
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q2" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo doy de alta mi centro de trabajo?
+                                </a>
+                                <div id="q2" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q3" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Qué es un turno homologado?
+                                </a>
+                                <div id="q3" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q4" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Qué es un turno abierto?
+                                </a>
+                                <div id="q4" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q5" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cuál es la diferencia entre turno homologado y turno abierto?
+                                </a>
+                                <div id="q5" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q6" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo debo asignar los turnos a mis empleados?
+                                </a>
+                                <div id="q6" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q7" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo debo asignar un centro de trabajo a mis empleados?
+                                </a>
+                                <div id="q7" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q8" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo puedo contratar Reloj Checador despúes de mi mes de prueba?
+                                </a>
+                                <div id="q8" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#q9" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Sí no pago después de mi mes de prueba, mi información se pierde?
+                                </a>
+                                <div id="q9" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hpanel panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                            <div class="panel-body">
+                                <h4 class="m-t-none m-b-none">Preguntas técnicas</h4>
+                                <small class="text-muted">Información sobre pases, rutas, calendario, pagos</small>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q10" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Para que sirve el calendario?
+                                </a>
+                                <div id="q10" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q11" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo creo un evento en el calendario?
+                                </a>
+                                <div id="q11" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q12" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Qué son las rutas?
+                                </a>
+                                <div id="q12" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q13" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Qué debo de tomar en cuenta al crear una ruta?
+                                </a>
+                                <div id="q13" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q14" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿El rastreo de rutas es en tiempo real?
+                                </a>
+                                <div id="q14" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q15" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Qué son los pases y para que sirven?
+                                </a>
+                                <div id="q15" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q16" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo debo configurar un pase de canje automático por el sistema?
+                                </a>
+                                <div id="q16" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q17" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cómo puedo dar pases a mis empleados?
+                                </a>
+                                <div id="q17" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#q18" aria-expanded="true">
+                                    <i class="fa fa-chevron-down pull-right text-muted"></i>
+                                    ¿Cuales son los metodos de pago?
+                                </a>
+                                <div id="q18" class="panel-collapse collapse">
+                                    <hr>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <br><br><br>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                D.R. iGenter México S. de R.L. de C.V., 2017. Nuevo León No. 202 Piso 5, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX.
+                Prohibida la reproducción total o parcial de esta obra sin la previa autorización de su titular.
+            </span>
+        </footer>
+    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+    <script src="vendor/moment/moment.js"></script>
+    <script src="vendor/xeditable/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script src="vendor/select2-3.5.2/select2.min.js"></script>
+    <script src="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="vendor/clockpicker/dist/bootstrap-clockpicker.min.js"></script>
+    <script src="vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- App scripts -->
+
+    <script src="scripts/homer.js"></script>
+
+<script>
+
+    $(function(){
+
+        $('#datepicker').datepicker();
+        $("#datepicker").on("changeDate", function(event) {
+            $("#my_hidden_input").val(
+                    $("#datepicker").datepicker('getFormattedDate')
+            )
+        });
+
+        $('#datapicker2').datepicker();
+        $('#datepicker .input-group.date').datepicker({ });
+        $('#datepicker .input-daterange').datepicker({ });
+
+        $("#demo1").TouchSpin({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            decimals: 2,
+            boostat: 5,
+            maxboostedstep: 10,
+        });
+
+        $("#demo2").TouchSpin({
+            verticalbuttons: true
+        });
+
+        $("#demo3").TouchSpin({
+            postfix: '%'
+        });
+
+        $("#demo4").TouchSpin({
+            postfix: "a button",
+            postfix_extraclass: "btn btn-default"
+        });
+
+        $(".js-source-states").select2();
+        $(".js-source-states-2").select2();
+
+        //turn to inline mode
+        $.fn.editable.defaults.mode = 'inline';
+
+        //defaults
+        $.fn.editable.defaults.url = '#';
+
+        //editables
+        $('#username').editable({
+            url: '#',
+            type: 'text',
+            pk: 1,
+            name: 'username',
+            title: 'Enter username'
+        });
+
+        $('#firstname').editable({
+            validate: function(value) {
+                if($.trim(value) == '') return 'This field is required';
+            }
+        });
+
+        $('#sex').editable({
+            prepend: "not selected",
+            source: [
+                {value: 1, text: 'Male'},
+                {value: 2, text: 'Female'}
+            ],
+            display: function(value, sourceData) {
+                var colors = {"": "gray", 1: "green", 2: "blue"},
+                        elem = $.grep(sourceData, function(o){return o.value == value;});
+
+                if(elem.length) {
+                    $(this).text(elem[0].text).css("color", colors[value]);
+                } else {
+                    $(this).empty();
+                }
+            }
+        });
+
+        $('#dob').editable();
+
+        $('#event').editable({
+            placement: 'right',
+            combodate: {
+                firstItem: 'name'
+            }
+        });
+
+        $('#comments').editable({
+            showbuttons: 'bottom'
+        });
+
+        $('#fruits').editable({
+            pk: 1,
+            limit: 3,
+            source: [
+                {value: 1, text: 'banana'},
+                {value: 2, text: 'peach'},
+                {value: 3, text: 'apple'},
+                {value: 4, text: 'watermelon'},
+                {value: 5, text: 'orange'}
+            ]
+        });
+
+        $('#user .editable').on('hidden', function(e, reason){
+            if(reason === 'save' || reason === 'nochange') {
+                var $next = $(this).closest('tr').next().find('.editable');
+                if($('#autoopen').is(':checked')) {
+                    setTimeout(function() {
+                        $next.editable('show');
+                    }, 300);
+                } else {
+                    $next.focus();
+                }
+            }
+        });
+
+        // ClockPicker
+        $('.clockpicker').clockpicker({autoclose: true});
+
+        // DateTimePicker
+        $('#datetimepicker1').datetimepicker();
+
+    });
+</script>
+
+</body>
+</html>

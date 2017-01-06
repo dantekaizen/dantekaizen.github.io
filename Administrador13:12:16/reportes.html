@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>iGenter | RELOJ CHECADOR</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+
+    <!-- Estilos de tipografia de clima -->
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons-wind.min.css" />
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons.min.css" />
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Header -->
+    <div id="header">
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i>&nbsp;MENÚ</div>
+            <div class="small-logo">
+                <span class="text-primary">iGenter México</span>
+            </div>
+        <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Aquí puedes buscar" class="form-control" name="search">
+            </div>
+        </form>
+
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="profile.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-comment" data-toggle="tooltip" title="Idiomas"></i>
+                        </a>
+
+                        <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>English</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-warning"></i>
+                                            <h5>Español</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-mail" data-toggle="tooltip" title="Notificaciones"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown animated flipInX">
+                            <li>
+                                <a>
+                                    Cruz García José Luis ha cambiado el pase "Salir un día una hora antes"
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Hoy tienes una ausencia por vacaciones
+                                </a>
+                            </li>
+                            <li class="summary"><a href="notificaciones.html">Ver todas las notificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90" data-toggle="tooltip" title="Cerrar Sesión"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="images/igenter_logo2.png" width="150px;">
+            </a>
+
+            <div class="stats-label text-color">
+                <span class="font-extra-bold font-uppercase"><a href="index.html">iGenter</a></span>
+            </div>
+        </div>
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="index.html"><span class="nav-label">INICIO</span></a>
+                </li>
+                <li class="active">
+                    <a href="reportes.html"><span class="nav-label">REPORTES</span></a>
+                </li>
+                <li>
+                    <a href="empleados.html"><span class="nav-label">EMPLEADOS</span></a>
+                </li>
+                <li>
+                    <a href="ausencias.html"><span class="nav-label">AUSENCIAS</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="permisos.html">PERMISOS</a></li>
+                        <li><a href="vacaciones.html">VACACIONES</a></li>
+                        <li><a href="incapacidades.html">INCAPACIDADES</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">CONFIGURACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="centros.html">CENTROS DE TRABAJO</a></li>
+                        <li><a href="turnos.html">TURNOS</a></li>
+                        <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
+                        <li><a href="puestos.html">PUESTOS</a></li>
+                        <li><a href="periodos.html">PERIODOS DE NÓMINA</a></li>
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="politicas.html">POLÍTICAS DE<br>VACACIONES</a></li>
+                        <li><a href="rutas.html">RUTAS</a></li>
+                        <li><a href="dashboard.html">DASHBOARD</a></li>
+                        <li><a href="masivo.html">SUBIDA MASIVA<br>DE EMPLEADOS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-label">ADMINISTRACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="parametros.html">PARÁMETROS</a></li>
+                        <li><a href="usuarios.html">USUARIOS</a></li>
+                        <li><a href="pagos.html">PAGOS</a></li>
+                        <li><a href="facturas.html">FACTURAS</a></li>
+                        <li><a href="cuenta.html">MI CUENTA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ayuda.html"><span class="nav-label">AYUDA</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div class="content animate-panel">
+
+            <div class="col-lg-12">
+                <div class="text-center">
+                <br><br>
+                    <button id="reportesboton" type="button" class="btn w-xs btn-info">POR EMPLEADO</button>
+                    <button id="centroboton" type="button" class="btn w-xs btn-danger">POR CENTROS DE TRABAJO</button>
+                    <button id="departamentoboton" type="button" class="btn w-xs btn-warning">POR DEPARTAMENTOS</button>
+                    <button id="turnoboton" class="btn w-xs btn-primary2">POR TURNO</button>
+                    <br><br>
+                </div>
+            </div>
+
+            <!-- Buscador empleados-->
+            <div class="col-lg-12">
+                <div id="selectordefiltros" class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        <div class="panel-tools">
+                            <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                            <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        REPORTE POR EMPLEADOS
+                    </div>
+                    <div class="panel-body">
+
+                    <div class="row">
+                        <div class="form-group"><label class="col-sm-2 control-label">Empleado</label>
+                            <div class="col-sm-10">
+                            <select class="js-source-states" style="width: 100%">
+                                <option value="3544">Corona Ortíz Ángel</option>
+                            </select>
+                            <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group"><label class="col-sm-2 control-label">Periodo de Reporte</label>
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account" id="emptierep">
+                                    <option class="esteno" selected value="ultimoperiodito">Último periodo</option>
+                                    <option class="esteno" value="perioditoencurso">Periodo en curso</option>
+                                    <option id="manualmente" value="manualmente">Manualmente</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div id="mostrarfechas" class="row">
+                            <br>
+                            <div class="col-lg-6 border-right text-center">
+                                            <div class="form-group"><label class="col-sm-4 control-label">Fecha de Inicio</label>
+                                            <div class="col-sm-8">
+                                                <input id="datapicker2" type="text" class="form-control ">
+                                            </div>
+                                        </div>
+                            </div>
+
+                            <div class="col-lg-6 text-center">
+                                            <div class="form-group"><label class="col-sm-4 control-label">Fecha de Término</label>
+                                            <div class="col-sm-8">
+                                                <input id="datapicker3" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center row">
+                            <br>
+                            <button id="mostrarficha" type="button" class="btn w-xs btn-success btn-sm asignarperiodo">MOSTRAR</button>
+                            <br>
+                        </div>
+
+
+                    </div>
+                    <div class="panel-footer">
+                        Especifica el tipo de reporte que deseas consultar.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ficha empleado-->
+            <div class="col-lg-12">
+                <div id="fichaempleado" class="hpanel hbgblue">
+                    <div class="panel-body">
+
+                            <div class="col-lg-2 text-center">
+                                <img src="images/angel.png" width="150">
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="table-responsive">
+                                    <table cellpadding="1" cellspacing="1" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Centro de Trabajo</th>
+                                            <th>Departamento</th>
+                                            <th>Turno</th>
+                                            <th>Puesto</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Ángel Corona Ortíz</td>
+                                            <td>Condesa</td>
+                                            <td>Finanzas</td>
+                                            <td>Matutino 9am</td>
+                                            <td>Gerente de Finazas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Sueldo</th>
+                                            <th>Fecha de Ingreso</th>
+                                            <th>Periodo de Nómina</th>
+                                            <th>Política de Vacaciones</th>
+                                            <th>Fecha de Nacimiento</th>
+                                        </tr>
+                                        <tr>
+                                            <td>$24,000</td>
+                                            <td>14/05/2013</td>
+                                            <td>Catorcenal Gerentes</td>
+                                            <td>Política Gerentes</td>
+                                            <td>22/07/1980</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CURP</th>
+                                            <th>IMSS</th>
+                                            <th>RFC</th>
+                                            <th>Teléfono móvil</th>
+                                            <th>Teléfono de casa</th>
+                                        </tr>
+                                        <tr>
+                                            <td>COOA800722HDFRRN04</td>
+                                            <td>20148879357</td>
+                                            <td>COOA800722LM8</td>
+                                            <td>55 2423 3453</td>
+                                            <td>4354 4323</td>
+                                        </tr>
+                                        </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reporte empleado-->
+            <div class="row">
+                <div id="reporteempleado" class="col-lg-12">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                            </div>
+                            CORONA ORTÍZ ANGEL REGISTROS DEL 1/09/2016 AL 15/09/2016
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                            <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>FECHA</th>
+                                    <th>ENTRADA</th>
+                                    <th>SALIDA A COMER</th>
+                                    <th>REGRESO A COMER</th>
+                                    <th>SALIDA</th>
+                                    <th>HORAS EXTRAS</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>02/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>03/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>04/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>05/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>08/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>18:03</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>09/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>18:03</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>10/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>11/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>12/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>15/09/2016</td>
+                                    <td>08:02</td>
+                                    <td>13:04</td>
+                                    <td>13:58</td>
+                                    <td>17:03</td>
+                                    <td>0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+                        </div>
+                        <div class="panel-footer">
+                            Total horas trabajadas: 80<br>
+                            Total horas extras: 2<br>
+                            Faltas: 0<br>
+                            Incidencias: 0<br>
+                            Permisos: 0<br>
+                            Vacaciones disfrutadas:0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buscador de centros de trabajo -->
+            <div class="col-lg-12">
+                <div id="buscadorcentros" class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        <div class="panel-tools">
+                            <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                            <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        REPORTE POR CENTRO DE TRABAJO
+                    </div>
+                    <div class="panel-body">
+
+                    <div class="row">
+                        <div class="form-group"><label class="col-sm-2 control-label">Centro de Trabajo</label>
+                            <div class="col-sm-10">
+                            <select class="js-source-states" style="width: 100%">
+                                <option>Condesa</option>
+                            </select>
+                            <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="text-center row">
+                            <br>
+                            <button id="mostrarfichacentro" type="button" class="btn w-xs btn-success btn-sm asignarperiodo">MOSTRAR</button>
+                            <br>
+                        </div>
+
+
+                    </div>
+                    <div class="panel-footer">
+                        Especifica el tipo de reporte que deseas consultar.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ficha centro -->
+            <div class="col-lg-12">
+                <div id="fichacentro" class="hpanel hbgred">
+                    <div class="panel-body">
+
+                            <div class="col-lg-12">
+                                <div class="table-responsive">
+                                    <table cellpadding="1" cellspacing="1" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="4">Condesa:&nbsp;&nbsp;&nbsp;Av. Nuevo León 202, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Departamentos: 4</td>
+                                            <td>Turnos: 2</td>
+                                            <td>Empleados: 45</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Telefono: 55 5823 3722</th>
+                                            <th>Tablets sincronizadas: 2</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                        </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buscador departamento-->
+            <div class="col-lg-12">
+                <div id="buscadordepartamento" class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        <div class="panel-tools">
+                            <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                            <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        REPORTE POR DEPARTAMENTO
+                    </div>
+                    <div class="panel-body">
+
+                    <div class="row">
+                        <div class="form-group"><label class="col-sm-2 control-label">Departamento</label>
+                            <div class="col-sm-10">
+                            <select class="js-source-states" style="width: 100%">
+                                <option>Recursos Humanos</option>
+                                <option>Gerencia</option>
+                                <option>Finanzas</option>
+                            </select>
+                            <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="text-center row">
+                            <br>
+                            <button id="mostrarfichadepartamento" type="button" class="btn w-xs btn-success btn-sm asignarperiodo">MOSTRAR</button>
+                            <br>
+                        </div>
+
+
+                    </div>
+                    <div class="panel-footer">
+                        Especifica el tipo de reporte que deseas consultar.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ficha departamento -->
+            <div class="col-lg-12">
+                <div id="fichadepartamento" class="hpanel hbgorange">
+                    <div class="panel-body">
+
+                            <div class="col-lg-12">
+                                <div class="table-responsive">
+                                    <table cellpadding="1" cellspacing="1" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Condesa:&nbsp;&nbsp;&nbsp;Av. Nuevo León 202, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Departamentos: 4</td>
+                                            <td>Turnos: 2</td>
+                                            <td>Empleados: 45</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Telefono: 55 5823 3722</th>
+                                            <th>Tablets sincronizadas: 2</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                        </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Buscador turno-->
+            <div class="col-lg-12">
+                <div id="buscadorturno" class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        <div class="panel-tools">
+                            <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                            <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        REPORTE POR TURNO
+                    </div>
+                    <div class="panel-body">
+
+                    <div class="row">
+                        <div class="form-group"><label class="col-sm-2 control-label">Seleccionar Centro de Trabajo</label>
+                            <div class="col-sm-10">
+                            <select class="js-source-states" style="width: 100%">
+                                <option>Condesa</option>
+                                <option>Insurgentes</option>
+                                <option>Parque Lira</option>
+                            </select>
+                            <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group"><label class="col-sm-2 control-label">Seleccionar Departamento</label>
+                            <div class="col-sm-10">
+                            <select class="js-source-states" style="width: 100%">
+                                <option>Matutino 9am</option>
+                                <option>Matutino 10am</option>
+                                <option>Matutino 11am</option>
+                            </select>
+                            <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="text-center row">
+                            <br>
+                            <button id="mostrarfichaturno" type="button" class="btn w-xs btn-success btn-sm asignarperiodo">MOSTRAR</button>
+                            <br>
+                        </div>
+
+
+                    </div>
+                    <div class="panel-footer">
+                        Especifica el tipo de reporte que deseas consultar.
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Ficha departamento -->
+            <div class="col-lg-12">
+                <div id="fichaturno" class="hpanel hbgviolet">
+                    <div class="panel-body">
+
+                            <div class="col-lg-12">
+                                <div class="table-responsive">
+                                    <table cellpadding="1" cellspacing="1" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Condesa:&nbsp;&nbsp;&nbsp;Av. Nuevo León 202, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Departamentos: 4</td>
+                                            <td>Turnos: 2</td>
+                                            <td>Empleados: 45</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Telefono: 55 5823 3722</th>
+                                            <th>Tablets sincronizadas: 2</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                        </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+        <br><br><br>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                D.R. iGenter México S. de R.L. de C.V., 2017. Nuevo León No. 202 Piso 5, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX.
+                Prohibida la reproducción total o parcial de esta obra sin la previa autorización de su titular.
+            </span>
+        </footer>
+    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+<!-- App scripts -->
+    <script src="scripts/homer.js"></script>
+    <script src="scripts/charts.js"></script>
+
+<script>
+
+    $(function () {
+    	pintarGrafica2("#966fd6", "#966fd6", "#966fd6");
+
+        setTimeout(function(){
+           pintarGrafica('#77dd77');
+        },700)  
+
+        // Wait until all panels will be render
+        // Remove setTimeout if you don't use animate-panel effect
+
+        function pintarGrafica(parametro){
+            c3.generate({
+                bindto: '#gauge',
+                data:{
+                    columns: [
+                        ['data', 88]
+                    ],
+
+                    type: 'gauge'
+                },
+                color:{
+                    pattern: [parametro, '#BABABA']
+
+                }
+            });
+        	
+        };      
+
+        function pintarGrafica2(color, color2, color3){
+
+	        var lineData = {
+	            labels: ["7:58", "7:59", "8:00", "8:01"],
+	            datasets: [
+	                {
+	                    label: "Example dataset",
+	                    fillColor: color,
+	                    strokeColor: color2,
+	                    pointColor: color3,
+	                    pointStrokeColor: "#fff",
+	                    pointHighlightFill: "#fff",
+	                    pointHighlightStroke: "#966fd6",
+	                    data: [8,6,6,5]
+	                }
+	            ]
+	        };
+
+	        var lineOptions = {
+	            scaleShowGridLines : true,
+	            scaleGridLineColor : "rgba(0,0,0,.03)",
+	            scaleGridLineWidth : 1,
+	            bezierCurve : false,
+	            pointDot : true,
+	            pointDotRadius : 5,
+	            pointDotStrokeWidth : 1,
+	            pointHitDetectionRadius : 20,
+	            datasetStroke : false,
+	            datasetStrokeWidth : 1,
+	            datasetFill : true,
+	            responsive: true,
+	            tooltipTemplate: "<%= value %>",
+	            showTooltips: true,
+	            onAnimationComplete: function()
+	            {
+	                this.showTooltip(this.datasets[0].points, true);
+	            },
+	            tooltipEvents: []
+	        };
+
+	        var ctx = document.getElementById("lineOptions").getContext("2d");
+	        var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
+		};
+			   
+		
+			$('.fa-eyedropper').click(function(e){
+                    console.log($(e.target));
+					 	  var fondito = $(e.target).attr('name'); 
+							$("*").css('color', fondito); 
+							$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo, .label-success, span.badge").css('color', '#fff');
+                            $(".fa-eyedropper[name*='#1bb51b']").css('color', '#1bb51b');
+                            $(".fa-eyedropper[name*='#ea0943']").css('color', '#ea0943');
+                            $(".fa-eyedropper[name*='#323edc']").css('color', '#323edc');
+                            $(".fa-eyedropper[name*='#e89115']").css('color', '#e89115');
+                            $(".fa-eyedropper[name*='#650afb']").css('color', '#650afb');
+                            $(".fa-eyedropper[name*='#2e2e2e']").css('color', '#2e2e2e');
+							$(".label-success").css('background-color',fondito );
+								
+								pintarGrafica(fondito);
+								pintarGrafica2(fondito,fondito,fondito); 
+					
+				}); 
+
+
+			/* metiendo el color directamente 
+
+
+					$('.btn-amarillo').click(function() {
+	    	$('.relleno').css({ fill: "#ffb606" });
+			var currentclass = $(this).attr('class');
+
+			$('.relleno' + currentclass ).css({ fill: "#ffb606" });
+			$("h1#hora, h3#fecha, #ahorros, ul#side-menu li a, tr, td").css('color', '#ffb606');
+			$(".label-success").css('background-color','#ffb606')
+			$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo").css('color', '#ff');
+
+			pintarGrafica("#ffb606");
+			pintarGrafica2("#ffb606","#ffb606","#ffb606")
+		});  */
+
+				/* EXP 
+		$('#html5colorpicker').on('change',function(e){
+				 	var fondito = $(this).val();
+				 	console.log(fondito);
+						$("h1#hora, h3#fecha, #ahorros, ul#side-menu li a, tr, td, .label-success").css('color', fondito );
+						$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo, .label-success").css('color', '#fff');
+						$('.relleno').css({ fill: fondito });
+						$(".label-success").css('background-color',fondito )
+							
+							pintarGrafica(fondito);
+							pintarGrafica2(fondito,fondito,fondito)
+				
+			}); */
+
+	});
+</script>
+
+<script>
+
+    /* Querys para empleado */
+    $('#reportesboton').click(function() {
+        $("#selectordefiltros").show();
+    }); 
+
+   $("#manualmente").click(function() {
+        $("#mostrarfechas").show();
+    }); 
+
+   $(".esteno").click(function() {
+        $("#mostrarfechas").hide();
+    }); 
+
+    $('#mostrarficha').click(function() {
+        $("#fichaempleado,#reporteempleado").show();
+    }); 
+
+
+    $('#reportesboton').click(function() {
+        $("#buscadorcentros,#fichacentro,#buscadordepartamento,#fichadepartamento,#buscadorturno,#fichaturno").hide();
+    }); 
+
+
+    /* Querys para centro de trabajo */
+    $('#centroboton').click(function() {
+        $("#buscadorcentros").show();
+    }); 
+
+    $('#mostrarfichacentro').click(function() {
+        $("#fichacentro").show();
+    }); 
+
+    $('#centroboton').click(function() {
+        $("#selectordefiltros,#fichaempleado,#reporteempleado,#buscadordepartamento,#fichadepartamento,#buscadorturno,#fichaturno").hide();
+    }); 
+
+    /* Querys para departamento */
+    $('#departamentoboton').click(function() {
+        $("#buscadordepartamento").show();
+    }); 
+
+    $('#mostrarfichadepartamento').click(function() {
+        $("#fichadepartamento").show();
+    }); 
+
+    $('#departamentoboton').click(function() {
+        $("#selectordefiltros,#fichaempleado,#reporteempleado,#buscadorcentros,#fichacentro,#buscadorturno,#fichaturno").hide();
+    }); 
+
+    /* Querys para turno */
+
+    $('#turnoboton').click(function() {
+        $("#buscadorturno").show();
+    }); 
+
+    $('#mostrarfichaturno').click(function() {
+        $("#fichaturno").show();
+    }); 
+
+    $('#turnoboton').click(function() {
+        $("#selectordefiltros,#fichaempleado,#reporteempleado,#buscadorcentros,#fichacentro,#buscadordepartamento,#fichadepartamento").hide();
+    }); 
+</script>
+
+</body>
+</html>

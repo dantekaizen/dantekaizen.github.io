@@ -1,0 +1,857 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>AGENCY FIRMA, SC | RELOJ CHECADOR</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+    <link rel="stylesheet" href="vendor/xeditable/bootstrap3-editable/css/bootstrap-editable.css" />
+    <link rel="stylesheet" href="vendor/select2-3.5.2/select2.css" />
+    <link rel="stylesheet" href="vendor/select2-bootstrap/select2-bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="vendor/clockpicker/dist/bootstrap-clockpicker.min.css" />
+    <link rel="stylesheet" href="vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+
+    <!-- Estilos de tipografia de clima -->
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons-wind.min.css" />
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons.min.css" />
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Header -->
+    <div id="header">
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i>&nbsp;MENÚ</div>
+            <div class="small-logo">
+                <span class="text-primary">ALAN PADILLA</span>
+            </div>
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="profile.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-comment"></i>
+                        </a>
+
+                        <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>English</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-warning"></i>
+                                            <h5>Español</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-mail"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown animated flipInX">
+                            <li>
+                                <a>
+                                    Vacaciones rechazadas.
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Has llegado a 3 incidencias en este periodo.
+                                </a>
+                            </li>
+                            <li class="summary"><a href="notificaciones.html">Ver todas las notificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="images/alan.jpg" width="150px;">
+            </a>
+            <div class="stats-label text-color">
+                <a href="index.html"><span class="font-extra-bold font-uppercase">Alan Padilla</span></a>
+            </div>
+        </div>
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="index.html"><span class="nav-label">INICIO</span></a>
+                </li>
+                <li>
+                    <a href="vacaciones.html"><span class="nav-label">VACACIONES</span></a>
+                </li>
+                <li>
+                    <a href="permisos.html"> <span class="nav-label">PERMISOS</span></a>
+                </li>
+                <li>
+                    <a href="perfil.html"><span class="nav-label">MI PERFIL</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div class="content animate-panel">
+
+            <div class="row">
+                <div class="col-lg-12 text-center m-t-md">
+                    <h1>iGenter México S. de R.L. de C.V.</h1>
+                    <h1 id="hora">
+                    <script type="text/javascript">
+                           function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();}
+                    </script>
+                        <div id="reloj"></div>
+                    </h1>
+
+                    <h5 id="fecha">
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            function makeArray() {
+                            for (i = 0; i<makeArray.arguments.length; i++)
+                            this[i + 1] = makeArray.arguments[i];}
+                            var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+                            'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+                            var date = new Date();
+                            var day = date.getDate();
+                            var month = date.getMonth() + 1;
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+                            document.write( + day + " de " + months[month] + " del " + year);
+                            //]]>
+                        </script>
+                    </h5>
+                </div>
+            </div>
+
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <div class="hpanel">
+	                    <div class="panel-heading">
+	                        <div class="panel-tools">
+	                        </div>
+	                        <i class="fa fa-check fa-2x" aria-hidden="true"></i>Registros de Horarios
+	                    </div>
+	                    <div class="panel-body">
+
+	                            <div class="col-lg-4 text-center">
+	                                <h2 class="font-extra-bold m-b-xs">&nbsp;&nbsp;REALIZAR REGISTRO</h2>
+	    							<br><br>
+										<button class="btn btn-success btn-lg" type="button" data-toggle="modal" data-target="#modalregistroentrada">REGISTRAR ENTRADA</button>
+	                                <br><br>
+										<button class="btn btn-warning btn-lg" type="button" data-toggle="modal" data-target="#modalregistrosalidaacomer">REGISTRAR SALIDA A COMER</button>
+	                                <br><br>
+										<button class="btn btn-warning2 btn-lg" type="button" data-toggle="modal" data-target="#modalregistroregresodecomer">REGISTRAR REGRESO A COMER</button>
+									<br><br>
+										<button class="btn btn-primary2 btn-lg" type="button" data-toggle="modal" data-target="#modalregistrosalida">REGISTRAR SALIDA</button>
+									<br><br><br><br>
+	                            </div>
+
+	                            <div class="col-lg-7 pull-right">
+	                            	<div class="lightBoxGallery">
+	                            		<p>Mi ubicación (Utilizar conexión a Internet por Wifi)
+	                            		<img class="img-responsive m-t-md" src="images/ubicacion.png">
+	                            		<div class="text-center">
+	                            		 	<button type="button" class="btn w-xs btn-info">Mostrar mi ubicación</button>
+	                            		</div>
+	                                </div>
+	                            </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-lg-12">
+	                <div class="hpanel collapsed">
+	                    <div class="panel-heading hbuilt">
+	                        <div class="panel-tools">
+	                            <a class="showhide">Mostrar más &nbsp;<i class="fa fa-chevron-up"></i></a>
+	                        </div>
+	                        <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Detalle de Asistencia
+	                    </div>
+	                    <div class="panel-body">
+
+                    	    <div class="col-lg-6">
+                    	        <div class="form-group"><label class="col-sm-2 control-label">Año</label>
+
+                    	            <div class="col-sm-10"><select class="form-control m-b" name="account">
+                    	                <option>2016</option>
+                    	                <option>2015</option>
+                    	                <option>2014</option>
+                    	            </select>
+                    	            </div>
+                    	        </div>
+                            </div>
+
+
+                    	    <div class="col-lg-6">
+                    	        <div class="form-group"><label class="col-sm-2 control-label">Periodo</label>
+
+                    	            <div class="col-sm-10"><select class="form-control m-b" name="account">
+                    	                <option>17</option>
+                    	                <option>16</option>
+                    	                <option>15</option>
+                    	                <option>14</option>
+                    	                <option>13</option>
+                    	                <option>12</option>
+                    	                <option>11</option>
+                    	                <option>10</option>
+                    	               	<option>9</option>
+                    	                <option>8</option>
+                    	                <option>7</option>
+                    	                <option>6</option>
+                    	                <option>5</option>
+                    	                <option>4</option>
+                    	                <option>3</option>
+                    	                <option>2</option>
+                    	                <option>1</option>
+                    	            </select>
+                    	            </div>
+                    	        </div>
+                            </div>
+
+	    
+                            <div class="col-lg-12">
+    	    					<br>
+    			                <div class="table-responsive">
+    				                <table cellpadding="1" cellspacing="1" class="table">
+    				                    <thead>
+    				                    <tr>
+    				                        <th>Fecha</th>
+    				                        <th>Entrada</th>
+    				                        <th>Salida a comer</th>
+    				                        <th>Regreso de comer</th>
+    				                        <th>Salida</th>
+    				                    </tr>
+    				                    </thead>
+    				                    <tbody>
+    				                    <tr>
+    				                        <td><h5>22/08/2016</h5></td>
+    				                        <td><button class="btn notepasesdeverga" type="button">10:23</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:41</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:28</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:13</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>19/08/2016</h5></td>
+    				                        <td><button class="btn notepasesdeverga" type="button">10:34</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:20</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:58</button></td>
+    				                        <td><button class="btn sinpedos" type="button">9:08</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>18/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:21</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:49</button></td>
+    				                        <td><button class="btn incidenciatiempo" type="button">15:55&nbsp;&nbsp;<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:13</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>17/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:30</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:11</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:04</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:03</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>16/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:44</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:02</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:52</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:25</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>15/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:19</button></td>
+    				                        <td><button class="btn sinpedos" type="button">13:56</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:44</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:01</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>12/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:49</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:22</button></td>
+    				                        <td><button class="btn incidenciafalta" type="button">--:--&nbsp;&nbsp;<i class="fa fa-times-circle" aria-hidden="true"></i></button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:15</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>11/08/2016</h5></td>
+    				                        <td><button class="btn incidencialugar" type="button">9:26&nbsp;&nbsp;<i class="fa fa-location-arrow" aria-hidden="true"></i></button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:23</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:14</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:17</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>11/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:26</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:23</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:14</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:17</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>10/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:23</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:32</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:21</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:03</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>09/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:30</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:38</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:30</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:30</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>08/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:35</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:53</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:43</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:25</button></td>
+    				                    </tr>
+    				                    <tr>
+    				                        <td><h5>05/08/2016</h5></td>
+    				                        <td><button class="btn sinpedos" type="button">9:28</button></td>
+    				                        <td><button class="btn sinpedos" type="button">14:54</button></td>
+    				                        <td><button class="btn sinpedos" type="button">15:47</button></td>
+    				                        <td><button class="btn sinpedos" type="button">19:49</button></td>
+    				                    </tr>
+    				                    </tbody>
+    				                </table>
+    							</div>
+                            </div>
+
+	                    </div>
+	                    <div class="panel-footer">
+	                		Te recordamos que el periodo de incidencias actual afecta al siguiente periodo de nómina
+	            		</div>
+	                </div>
+	            </div>
+
+	            <div class="col-lg-12">
+	            	<div class="hpanel collapsed">
+	                   	<div class="panel-heading hbuilt">
+	                        <div class="panel-tools">
+	                            <a class="showhide">Mostrar más &nbsp;<i class="fa fa-chevron-up"></i></a>
+	                        </div>
+	                         <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Mi Horario Laboral
+	                    </div>     	                
+	                    <div class="panel-body">
+
+			                <div class="table-responsive">
+				                <table cellpadding="1" cellspacing="1" class="table table-condensed">
+				                    <thead>
+				                    <tr>
+				                        <th></th>
+				                        <th>Lunes</th>
+				                        <th>Martes</th>
+				                        <th>Miércoles</th>
+				                        <th>Jueves</th>
+				                        <th>Viernes</th>
+				                        <th>Sábado</th>
+				                        <th>Domingo</th>
+				                    </tr>
+				                    </thead>
+				                    <tbody>
+				                    <tr>
+				                        <td>Entrada</td>
+				                        <td>10:00</td>
+				                        <td>10:00</td>
+				                        <td>10:00</td>
+				                        <td>10:00</td>
+				                        <td>10:00</td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                    </tr>
+				                    <tr>
+				                        <td>Salida a Comer</td>
+				                        <td>14:00</td>
+				                        <td>14:00</td>
+				                        <td>14:00</td>
+				                        <td>14:00</td>
+				                        <td>--:--</td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                    </tr>
+				                    <tr>
+				                        <td>Regreso a Comer</td>
+				                        <td>15:00</td>
+				                        <td>15:00</td>
+				                        <td>15:00</td>
+				                        <td>15:00</td>
+				                        <td>--:--</td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                    </tr>
+				                    <tr>
+				                        <td>Salida</td>
+				                        <td>19:00</td>
+				                        <td>19:00</td>
+				                        <td>19:00</td>
+				                        <td>19:00</td>
+				                        <td>15:00</td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                        <td class="ahuevohoynotrabajas"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+				                    </tr>
+				                    </tbody>
+				                </table>
+			                </div>
+			            </div>
+			            <div class="panel-footer">
+
+			                Asegurate de realizar siempre tus registros a tiempo ya sea en la Web, Tablet o en Smarthphone
+			            </div>
+	            	</div>
+	        	</div>
+
+	            <div class="col-lg-6">
+	                <div class="hpanel collapsed">
+	                    <div class="panel-heading hbuilt">
+	                        <div class="panel-tools">
+	                            <a class="showhide">Mostrar más &nbsp;<i class="fa fa-chevron-up"></i></a>
+	                        </div>
+	                        <i class="fa fa-building fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Mi Centro de Trabajo
+	                    </div>
+	                    <div class="panel-body text-center">
+								Calle Teotihuacan 18, Hipódromo, 06100 Ciudad de México, CDMX.
+	                            <div class="col-lg-12 text-center">
+	                            <br>
+	                            		<img class="img-responsive text-center" src="images/centrotrabajo4.jpg">
+	                            </div>
+
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-lg-6">
+	                <div class="hpanel collapsed">
+	                    <div class="panel-heading hbuilt">
+	                        <div class="panel-tools">
+	                            <a class="showhide">Mostrar más &nbsp;<i class="fa fa-chevron-up"></i></a>
+	                        </div>
+	                        <i class="fa fa-gavel fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Política de Turno
+	                    </div>
+	                    <div class="panel-body">
+
+	                <div class="table-responsive">
+		                <table cellpadding="1" cellspacing="1" class="table table-condensed table-striped">
+		                    <tr>
+		                        <td>Tolerancia</td>
+		                        <td>5 minutos</td>
+		                    </tr>
+		                    <tr>
+		                        <td>Rango Permitido</td>
+		                        <td>50 metros</td>
+		                    </tr>
+		                    <tr>
+		                        <td>Retardos o incidencias para generar sanción</td>
+		                        <td>3</td>
+		                    </tr>
+		                </table>
+					</div>
+	                    </div>
+	                </div>
+	            </div>
+
+
+                <div class="col-lg-12 text-center m-t-md">
+                    <h4>MI FICHA DE EMPLEADO</h4>
+                </div>
+
+            <!-- Ficha empleado-->
+            <div class="col-lg-12">
+                <div id="fichaempleado" class="hpanel hbgblue">
+                    <div class="panel-body">
+
+                            <div class="col-lg-2 text-center">
+                                <img src="images/alan.jpg" width="150px;">
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="table-responsive">
+                                    <table cellpadding="1" cellspacing="1" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Centro de Trabajo</th>
+                                            <th>Departamento</th>
+                                            <th>Turno</th>
+                                            <th>Puesto</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Alan Padilla</td>
+                                            <td>Condesa</td>
+                                            <td>Marketing</td>
+                                            <td>Matutino 9am</td>
+                                            <td>Community Manager</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Sueldo</th>
+                                            <th>Fecha de Ingreso</th>
+                                            <th>Periodo de Nómina</th>
+                                            <th>Política de Vacaciones</th>
+                                            <th>Fecha de Nacimiento</th>
+                                        </tr>
+                                        <tr>
+                                            <td>$18,000</td>
+                                            <td>14/05/2013</td>
+                                            <td>Catorcenal 1</td>
+                                            <td>De Ley</td>
+                                            <td>22/07/1985</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CURP</th>
+                                            <th>IMSS</th>
+                                            <th>RFC</th>
+                                            <th>Teléfono móvil</th>
+                                            <th>Teléfono de casa</th>
+                                        </tr>
+                                        <tr>
+                                            <td>COOA800722HDFRRN04</td>
+                                            <td>20148879357</td>
+                                            <td>COOA800722LM8</td>
+                                            <td>55 2423 3453</td>
+                                            <td>4354 4323</td>
+                                        </tr>
+                                        </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+	        </div>
+
+	        <br><br><br><br>
+	    </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                D.R. iGenter México S. de R.L. de C.V., 2017. Nuevo León No. 202 Piso 5, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX.
+                Prohibida la reproducción total o parcial de esta obra sin la previa autorización de su titular.
+            </span>
+        </footer>
+    </div>
+
+<!-- Modals -->
+                    <div class="modal fade" id="modalregistroentrada" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="hmodal-success"></div>
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title">BIENVENIDO ALAN PADILLA</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Deseamos que tengas un excelente día</strong></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Registrar mi Entrada</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="modalregistrosalidaacomer" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="hmodal-success"></div>
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title">¿Ya vas a comer?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Recuerda alimentarte balanceadamente</strong></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Registrar mi Salida a Comer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalregistroregresodecomer" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="hmodal-success"></div>
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title">¿Quedaste satisfecho?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Te recomendamos realizar estiramientos para que no te de el mal del puerco y puedas continuar con tu jornada laboral de la mejor forma</strong></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Registrar mi Regreso de Comer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalregistrosalida" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="hmodal-success"></div>
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title">¿Ya te retiras?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Esperamos que tengas un agradable regreso y que descanses. Gracias por colaborar con nosotros</strong></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Registrar mi Salida</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+<!-- App scripts -->
+    <script src="scripts/homer.js"></script>
+    <script src="scripts/charts.js"></script>
+
+<script>
+
+    $(function () {
+    	pintarGrafica2("black", "black", "black");
+
+        setTimeout(function(){
+           pintarGrafica('black');
+        },700)  
+
+        // Wait until all panels will be render
+        // Remove setTimeout if you don't use animate-panel effect
+
+        function pintarGrafica(parametro){
+            c3.generate({
+                bindto: '#gauge',
+                data:{
+                    columns: [
+                        ['data', 88]
+                    ],
+
+                    type: 'gauge'
+                },
+                color:{
+                    pattern: [parametro, '#BABABA']
+
+                }
+            });
+        	
+        };      
+
+        function pintarGrafica2(color, color2, color3){
+
+	        var lineData = {
+	            labels: ["7:58", "7:59", "8:00", "8:01"],
+	            datasets: [
+	                {
+	                    label: "Example dataset",
+	                    fillColor: color,
+	                    strokeColor: color2,
+	                    pointColor: color3,
+	                    pointStrokeColor: "#fff",
+	                    pointHighlightFill: "#fff",
+	                    pointHighlightStroke: "rgba(26,179,148,1)",
+	                    data: [2,1,0,3]
+	                }
+	            ]
+	        };
+
+	        var lineOptions = {
+	            scaleShowGridLines : true,
+	            scaleGridLineColor : "rgba(0,0,0,.03)",
+	            scaleGridLineWidth : 1,
+	            bezierCurve : false,
+	            pointDot : true,
+	            pointDotRadius : 3,
+	            pointDotStrokeWidth : 1,
+	            pointHitDetectionRadius : 20,
+	            datasetStroke : false,
+	            datasetStrokeWidth : 1,
+	            datasetFill : true,
+	            responsive: true,
+	            tooltipTemplate: "<%= value %>",
+	            showTooltips: true,
+	            onAnimationComplete: function()
+	            {
+	                this.showTooltip(this.datasets[0].points, true);
+	            },
+	            tooltipEvents: []
+	        };
+
+	        var ctx = document.getElementById("lineOptions").getContext("2d");
+	        var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
+		};
+			   
+		
+			$('.fa-eyedropper').click(function(e){
+                    console.log($(e.target));
+					 	  var fondito = $(e.target).attr('name'); 
+							$("*").css('color', fondito); 
+							$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo, .label-success, span.badge").css('color', '#fff');
+                            $(".fa-eyedropper[name*='#1bb51b']").css('color', '#1bb51b');
+                            $(".fa-eyedropper[name*='#ea0943']").css('color', '#ea0943');
+                            $(".fa-eyedropper[name*='#323edc']").css('color', '#323edc');
+                            $(".fa-eyedropper[name*='#e89115']").css('color', '#e89115');
+                            $(".fa-eyedropper[name*='#650afb']").css('color', '#650afb');
+                            $(".fa-eyedropper[name*='#2e2e2e']").css('color', '#2e2e2e');
+							$(".label-success").css('background-color',fondito );
+								
+								pintarGrafica(fondito);
+								pintarGrafica2(fondito,fondito,fondito); 
+					
+				}); 
+
+
+			/* metiendo el color directamente 
+
+
+					$('.btn-amarillo').click(function() {
+	    	$('.relleno').css({ fill: "#ffb606" });
+			var currentclass = $(this).attr('class');
+
+			$('.relleno' + currentclass ).css({ fill: "#ffb606" });
+			$("h1#hora, h3#fecha, #ahorros, ul#side-menu li a, tr, td").css('color', '#ffb606');
+			$(".label-success").css('background-color','#ffb606')
+			$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo").css('color', '#ff');
+
+			pintarGrafica("#ffb606");
+			pintarGrafica2("#ffb606","#ffb606","#ffb606")
+		});  */
+
+				/* EXP 
+		$('#html5colorpicker').on('change',function(e){
+				 	var fondito = $(this).val();
+				 	console.log(fondito);
+						$("h1#hora, h3#fecha, #ahorros, ul#side-menu li a, tr, td, .label-success").css('color', fondito );
+						$("btn-morado, btn-azul, btn-amarillo, btn-naranja, btn-rojo, .label-success").css('color', '#fff');
+						$('.relleno').css({ fill: fondito });
+						$(".label-success").css('background-color',fondito )
+							
+							pintarGrafica(fondito);
+							pintarGrafica2(fondito,fondito,fondito)
+				
+			}); */
+
+	});
+</script>
+
+<script>
+
+    $(function () {
+
+        var element = "[class*=col]";
+        var handle = ".panel-body";
+        var connect = "[class*=col]";
+        $(element).sortable(
+                {
+                    handle: handle,
+                    connectWith: connect,
+                    tolerance: 'pointer',
+                    forcePlaceholderSize: true,
+                    opacity: 0.8
+                })
+                .disableSelection();
+
+    });
+</script>
+
+</body>
+</html>

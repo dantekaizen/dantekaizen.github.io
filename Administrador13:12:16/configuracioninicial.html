@@ -1,0 +1,291 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>iGenter | RELOJ CHECADOR</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/c3/c3.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+
+    <!-- Estilos de tipografia de clima -->
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons-wind.min.css" />
+    <link rel="stylesheet" href="fonts/clima/css/weather-icons.min.css" />
+
+    <link rel="stylesheet" href="styles/styleinicial.css">
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+        <div class="content">
+        <div class="text-center">
+			<img src="images/logo.png">
+		</div>
+        <div class="transition animated fadeIn">
+
+                <div class="text-center">
+
+                    <h2 class="font-light m-b-xs ">
+                        GRACIAS POR REGISTRARTE
+                    </h2><br>
+                    <h4 style="text-transform: uppercase;">Te damos la bienvenida a la herramienta más fácil y completa para llevar el registro de horarios de tus empleados.</h4><br>
+
+                    <h5>A continuación te pedimos realizar una pequeña configuración para comenzar a usar el reloj checador.</h5><br>
+                </div>
+        </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hpanel">
+                        <div class="panel-heading">
+                            <div class="panel-tools">
+                            </div>
+                        </div>
+                        <div class="panel-body">
+
+                            <form name="simpleForm" novalidate id="simpleForm" action="#" method="post">
+
+                                <div class="text-center m-b-md" id="wizardControl">
+
+                                    <a class="btn btn-primary" href="#step1" data-toggle="tab">HORA</a>
+                                    <a class="btn btn-primary" href="#step2" data-toggle="tab">LOGO</a>
+                                    <a class="btn btn-primary" href="#step3" data-toggle="tab">FUNCIONES</a>
+
+                                </div>
+
+                                <div class="tab-content">
+                                <div id="step1" class="p-m tab-pane active">
+
+
+
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center">
+                                            <h5>Selecciona la hora para el Reloj Checador y da clic en siguiente.</h5><br><br>
+
+                                            <div class="row text-center">
+                                                <h1 id="hora">
+                                                    <script type="text/javascript">
+
+                                                           function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();}
+                                                    </script>
+                                                    <div id="reloj"></div>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row text-center">
+                                        <br>
+                                        <button id="botoncambiarhora" type="button" class="btn btn-outline btn-primary2">Manejar otra hora</button>
+                                    </div>
+
+                                    <div id="seleccionarhora" class="row">
+                                    <br><br>
+                                        <div class="form-group"><label class="col-sm-2 control-label">Selecciona tu ciudad</label>
+
+                                            <div class="col-sm-10"><select class="form-control m-b" name="account">
+                                                <option>Mexicali, B.C. (UTC-8)</option>
+                                                <option>La Paz, B.C.S. (UTC-7)</option>
+                                                <option>CDMX (UTC-6)</option>
+                                                <option>Quintana Roo (UTC-5)</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-right m-t-xs">
+                                        <a class="btn btn-default next" href="#step2" data-toggle="tab">Siguiente</a>
+                                    </div>
+                                </div>
+
+                                <div id="step2" class="p-m tab-pane">
+
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center">
+                                            <div class="row">
+                                            <h5>Sube el logo de tu empresa, si no cuentas en este momento con él, luego lo podrás subir.</h5>
+                                            <p>Se aceptan formatos "jpg" y "png", tamaño mínimo 300px de ancho y 200px de alto.<br><br><br>
+                                        <div class="form-group text-center">
+                                            <div class="col-sm-4 col-sm-offset-4 text-center">
+                                                <input type="file" class="text-center">
+                                            </div>
+                                        </div>
+                                        <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-right m-t-xs">
+                                        <a class="btn btn-default prev" href="#step1" data-toggle="tab">Anterior</a>
+                                        <a class="btn btn-default next" href="#step3" data-toggle="tab">Siguiente</a>
+                                    </div>
+                                </div>
+                                <div id="step3" class="tab-pane">
+                                    <div class="row text-center m-t-lg m-b-lg">
+                                        <div class="col-lg-12">
+                                            <h5>El Reloj Checador puede ser tan sencillo y tan complejo como tú gustes.</h5><br><br>
+                                            <div class="row">
+
+                                                <div class="col-lg-6 border-right">
+
+                                                        <div class="hpanel hbggreen">
+                                                            <div class="panel-body">
+                                                                <div class="text-center">
+                                                                    <h2 class="m-b-xs">Básico</h2>
+                                                                    <div class="m">
+                                                                        <i class="pe-7s-config fa-5x"></i>
+                                                                    </div>
+
+                                                                                    <div class="col-md-offset-3 col-md-6">
+                                                                                            <p class="text-left">
+                                                                                            - Empleados <br>
+                                                                                            - Centros de Trabajo <br>
+                                                                                            - Turnos <br>
+                                                                                            - Departamentos* <br>
+                                                                                            - Puestos* <br>
+                                                                                            - Calendario* <br>
+                                                                                            - Periodos de nómina* <br>
+                                                                                            - Administradores* <i class="fa fa-info-circle fa-lg" aria-hidden="false" data-toggle="tooltip" title="Las cuentas de administradores pueden generarse para facilitar la carga de trabajo entre diferentes personas, a las cuentas administradoras se les puede configurar por empleados, centros de trabajo, departamentos, turnos o periodos de nómina."></i> <br><br></p>
+                                                                                    </div><br>
+
+                                                                    <div class="col-md-12 text-center">
+                                                                    <button type="button" id="basicoboton" class="btn btn-default btn-sm">Usar básico</button><br><br>
+                                                                    <i id="basicocheck" class="fa fa-check-circle-o fa-4x" aria-hidden="true"></i>
+                                                                   	<br><br>
+                                                             		<p class="small text-left">* Estas características son opcionales y no son necesarias para el correcto funcionamiento del Reloj Checador.</p>
+                                                                    </div>
+
+                                                                    <br>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                        <div class="hpanel hbgviolet">
+                                                            <div class="panel-body">
+                                                                <div class="text-center">
+                                                                    <h2 class="m-b-xs">Avanzado</h2>
+                                                                    <div class="m">
+                                                                        <i class="pe-7s-config fa-5x"></i>
+                                                                    </div>
+
+                                                                                    <div class="col-md-offset-3 col-md-6">
+                                                                                            <p class="text-left">
+                                                                                            - Empleados <br>
+                                                                                            - Centros de Trabajo <br>
+                                                                                            - Turnos <br>
+                                                                                            - Departamentos* <br>
+                                                                                            - Puestos* <br>
+                                                                                            - Calendario* <br>
+                                                                                            - Periodos de nómina* <br>
+                                                                                            - Administradores* &nbsp;<i class="fa fa-info-circle fa-lg" aria-hidden="false" data-toggle="tooltip" title="Las cuentas de administradores pueden generarse para facilitar la carga de trabajo entre diferentes personas, a las cuentas administradoras se les puede configurar por empleados, centros de trabajo, departamentos, turnos o periodos de nómina."></i> <br>
+                                                                                            - Rutas* &nbsp;<i class="fa fa-info-circle fa-lg" aria-hidden="false" data-toggle="tooltip" title="Las rutas puede ser creadas y asiganas a empleados en dodne su trabajo consta en ir de un lugar a otro por diversas situaciones."></i><br>
+                                                                                            - Políticas de vacaciones diferentes a las de ley*&nbsp;<i class="fa fa-info-circle fa-lg" aria-hidden="false" data-toggle="tooltip" title="Puedes generar políticas de de vacaciones superiores a la ley para los empleados que lo requieran en donde podrás asignarles los días vacaciones, la prima vacaciones en base a sus años de antiguedad."></i><br>
+                                                                                            - Subida masiva de empleados**&nbsp;<i class="fa fa-info-circle fa-lg" aria-hidden="false" data-toggle="tooltip" title="Ofrecemos un layout en excel el cual puedes bajar y en dodne peudes capturar todos los datos de tus empleados a la vez y así mismo asignarles un centrod e trabajo y un turno."></i><br><br></p>
+                                                                                    </div><br>
+
+                                                                    <div class="col-md-12 text-center">
+                                                                    <button type="button" id="avanzadoboton" class="btn btn-default btn-sm">Usar avanzado</button><br><br>
+                                                                    <i id="avanzadocheck" class="fa fa-check-circle-o fa-4x" aria-hidden="true"></i>
+                                                                   	<br><br>
+                                                                    <p class="small text-left">* Estas características son opcionales y no son necesarias para el correcto funcionamiento del Reloj Checador.<br>**Recomendado para empresas con más de 30 empleados</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-right m-t-xs">
+                                        <a class="btn btn-default prev" href="#step2" data-toggle="tab">Anterior</a>
+                                        <a class="btn btn-info submitWizard" href="tour.html">COMENZAR</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+
+                            <div class="m-t-md">
+                                <p>Después podrás cambiar la configuración.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendor/jquery.flot.spline/index.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/c3/c3.min.js"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+<!-- App scripts -->
+    <script src="scripts/homer.js"></script>
+    <script src="scripts/charts.js"></script>
+
+<script>
+
+    $('#botoncambiarhora').click(function() {
+        $("#seleccionarhora").show();
+    }); 
+
+
+    $('#avanzadoboton').click(function() {
+        $("#avanzadocheck").show();
+    }); 
+
+    $('#avanzadoboton').click(function() {
+        $("#basicocheck").hide();
+    }); 
+
+    $('#basicoboton').click(function() {
+        $("#basicocheck").show();
+    }); 
+
+    $('#basicoboton').click(function() {
+        $("#avanzadocheck").hide();
+    }); 
+
+</script>
+
+</body>
+</html>

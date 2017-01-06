@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>iGenter | RELOJ CHECADOR</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-tour/build/css/bootstrap-tour.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Header -->
+    <div id="header">
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i>&nbsp;MENÚ</div>
+            <div class="small-logo">
+                <span class="text-primary">iGenter México</span>
+            </div>
+        <form role="search" class="navbar-form-custom" method="post" action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Aqui puedes buscar •‿•" class="form-control" name="search">
+            </div>
+        </form>
+
+            <div class="mobile-menu">
+                <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="collapse mobile-navbar" id="mobile-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="" href="profile.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav no-borders">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-comment"></i>
+                        </a>
+
+                        <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>English</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="pe pe-7s-comment text-warning"></i>
+                                            <h5>Español</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-mail"></i>
+                            <span class="label label-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu hdropdown animated flipInX">
+                            <li>
+                                <a>
+                                    Cruz García José Luis ha cambiado el pase "Salir un día una hora antes"
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Hoy tienes una ausencia por vacaciones
+                                </a>
+                            </li>
+                            <li class="summary"><a href="notificaciones.html">Ver todas las notificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="login.html">
+                            <i class="pe-7s-upload pe-rotate-90"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Navigation -->
+    <aside id="menu">
+        <div id="navigation">
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="images/igenter_logo2.png" width="150px;">
+            </a>
+
+            <div class="stats-label text-color">
+                <span class="font-extra-bold font-uppercase"><a href="index.html">iGenter</a></span>
+            </div>
+        </div>
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="index.html"><span class="nav-label">INICIO</span></a>
+                </li>
+                <li>
+                    <a href="reportes.html"><span class="nav-label">REPORTES</span></a>
+                </li>
+                <li>
+                    <a href="empleados.html" class="tour-4"><span class="nav-label">EMPLEADOS</span></a>
+                </li>
+                <li>
+                    <a href="ausencias.html"><span class="nav-label">AUSENCIAS</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="vacaciones.html">VACACIONES</a></li>
+                        <li><a href="incapacidades.html">INCAPACIDADES</a></li>
+                        <li><a href="permisos.html">PERMISOS</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="nav-label">CONFIGURACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="centros.html" class="tour-2">CENTROS DE TRABAJO</a></li>
+                        <li><a href="turnos.html" class="tour-3">TURNOS</a></li>
+                        <li><a href="departamentos.html" class="tour-5">DEPARTAMENTOS</a></li>
+                        <li><a href="puestos.html" class="tour-6">PUESTOS</a></li>
+                        <li><a href="periodos.html" class="tour-8">PERIODOS DE NÓMINA</a></li>
+                        <li><a href="calendario.html" class="tour-7">CALENDARIO</a></li>
+                        <li><a href="dashboard.html">DASHBOARD</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="nav-label">ADMINISTRACIÓN</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="parametros.html" class="tour-1">PARÁMETROS</a></li>
+                        <li><a href="usuarios.html" class="tour-9">USUARIOS</a></li>
+                        <li><a href="pagos.html">PAGOS</a></li>
+                        <li><a href="facturas.html">FACTURAS</a></li>
+                        <li><a href="cuenta.html">MI CUENTA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ayuda.html"><span class="nav-label">AYUDA</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div id="divbienvenida" class="normalheader transition animated fadeIn">
+            <div class="hpanel">
+                <div class="panel-body text-center">
+                    <h2 class="font-light m-b-xs ">
+                        BIENVENIDO
+                    </h2><br>
+                    <h4>El Reloj Checador lleva el registro de tus empleados de la forma más fácil.</h4>
+                    <small>Preparamos para ti un tour que te enseñara como dar de alta tu centro de trabajo, crear departamentos, turnos y dar de alta a tus empleados</small>
+                    <br><br>
+                    <button class="btn btn-success btn-lg m-b-lg run-tour">Ver Tour</button>
+                    <br><br>
+                    <button id="saltartour" class="btn btn-priamry2 m-b-lg" href="index.html">Saltar Tour</button>
+                </div>
+            </div>
+        </div>
+        <div class="content animate-panel">
+
+            <div class="row">
+                <div class="col-lg-12 text-center m-t-md">
+                                    <h1 id="empresanombre"> iGenter México S. de R.L. de C.V.</h1>
+                    <h1 id="hora">
+                    <script type="text/javascript">
+                           function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();}
+                    </script>
+                        <div id="reloj"></div>
+                    </h1>
+
+                    <h5 id="fecha">
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            function makeArray() {
+                            for (i = 0; i<makeArray.arguments.length; i++)
+                            this[i + 1] = makeArray.arguments[i];}
+                            var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+                            'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+                            var date = new Date();
+                            var day = date.getDate();
+                            var month = date.getMonth() + 1;
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+                            document.write( + day + " de " + months[month] + " del " + year);
+                            //]]>
+                        </script>
+                    </h5>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                D.R. iGenter México S. de R.L. de C.V., 2017. Nuevo León No. 202 Piso 5, Colonia Hipódromo Condesa, C.P. 06170, Delegación Cuauhtémoc, México, CDMX.
+                Prohibida la reproducción total o parcial de esta obra sin la previa autorización de su titular.
+            </span>
+        </footer>
+    </div>
+
+<!-- Vendor scripts -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.js"></script>
+    <script src="vendor/jquery-flot/jquery.flot.resize.js"></script>
+    <script src="vendor/iCheck/icheck.min.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/sparkline/index.js"></script>
+    <script src="vendor/bootstrap-tour/build/js/bootstrap-tour.js"></script>
+
+<!-- App scripts -->
+    <script src="scripts/homer.js"></script>
+    <script src="scripts/charts.js"></script>
+
+<script>
+
+    $(function () {
+
+
+        // Instance the tour
+        var tour = new Tour({
+            backdrop: true,
+            onShown: function(tour) {
+
+                // ISSUE    - https://github.com/sorich87/bootstrap-tour/issues/189
+                // FIX      - https://github.com/sorich87/bootstrap-tour/issues/189#issuecomment-49007822
+
+                // You have to write your used animated effect class
+                // Standard animated class
+                $('.animated').removeClass('fadeIn');
+                // Animate class from animate-panel plugin
+                $('.animated-panel').removeClass('zoomIn');
+
+            },
+            steps: [
+                {
+                    element: ".tour-1",
+                    title: "Parámetros del Reloj Checador",
+                    content: "Cambia entre modo básico y modo avanzado.",
+                    placement: "right"
+                },
+                {
+                    element: ".tour-2",
+                    title: "Centros de Trabajo",
+                    content: "Da de alta tu(s) centro(s) trabajo.",
+                    placement: "right"
+
+                },
+                {
+                    element: ".tour-3",
+                    title: "Turnos",
+                    content: "Crea turnos con horarios definidos u horarios abiertos.",
+                    placement: "right"
+
+                },
+                {
+                    element: ".tour-4",
+                    title: "Empleados",
+                    content: "Una vez creado tus centro(s) de trabajo(s) y turnos lo recomendable es dar de alta tus empleados.",
+                    placement: "right"
+
+                }
+            ]});
+
+        // Initialize the tour
+        tour.init();
+
+        // Restart the tour
+        $('.run-tour').click(function(){
+            tour.restart();
+        });
+
+        /**
+         * Flot charts line data and options
+         */
+        var chartIncomeData = [
+            {
+                label: "line",
+                data: [ [1, 10], [2, 26], [3, 16], [4, 36], [5, 32], [6, 51] ]
+            }
+        ];
+
+        var chartIncomeOptions = {
+            series: {
+                lines: {
+                    show: true,
+                    lineWidth: 0,
+                    fill: true,
+                    fillColor: "#64cc34"
+
+                }
+            },
+            colors: ["#62cb31"],
+            grid: {
+                show: false
+            },
+            legend: {
+                show: false
+            }
+        };
+
+        $.plot($("#flot-income-chart"), chartIncomeData, chartIncomeOptions);
+
+    });
+</script>
+
+<script>
+
+    $('#saltartour').click(function() {
+        $("#divbienvenida").hide();
+    }); 
+
+
+    $('#avanzadoboton').click(function() {
+        $("#avanzadocheck").show();
+    }); 
+
+    $('#avanzadoboton').click(function() {
+        $("#basicocheck").hide();
+    }); 
+
+    $('#basicoboton').click(function() {
+        $("#basicocheck").show();
+    }); 
+
+    $('#basicoboton').click(function() {
+        $("#avanzadocheck").hide();
+    }); 
+</script>
+
+</body>
+</html>
