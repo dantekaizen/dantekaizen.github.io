@@ -1,1 +1,0 @@
-# dantekaizen.github.io

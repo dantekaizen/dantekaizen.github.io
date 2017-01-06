@@ -1,0 +1,152 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image:url('../images/fondo.png');
+    background-repeat:no-repeat;
+background-position:center;
+} 
+
+#contenedor {
+    width:1000px;
+    height:800;
+    margin: 0 auto;
+}
+
+#menuprincipal {
+        height:150px;
+    width:100%;
+    margin:0;
+}
+
+#mariokart1 {
+    height:100%;
+    width: 250px;
+    float: left;
+         -webkit-filter: grayscale(1);
+}
+
+#mariokart1 img {
+    margin-left: 5px;
+    margin-top: 36px;
+}
+
+#mariokart2 {
+    height:100%;
+    width: 250px;
+    float: left;
+    -webkit-filter: grayscale(1);
+}
+
+
+#mariokart2 img {
+    margin-left: 5px;
+    margin-top: 17px;
+
+
+}
+
+#mariokart3 {
+    height:100%;
+    width: 250px;
+    float: left;
+    -webkit-filter: grayscale(1); 
+}
+
+#mariokart3 img {
+    margin-left: 5px;
+    margin-top: 31px;
+
+
+}
+
+#mariokart4 {
+    height:100%;
+    width: 250px;
+    float: left;
+      -webkit-filter: grayscale(1);
+         
+}
+
+#mariokart4 img {
+    margin-left: 5px;
+    margin-top: 39px;
+
+}
+
+#menuprincipal2 {
+        height:150px;
+    width:100%;
+    margin:0;
+}
+
+
+#mariokart5 {
+    height:100%;
+    width: 250px;
+    float: left;
+     -webkit-filter: grayscale(1);
+       
+}
+
+#mariokart5 img {
+    margin-left: 5px;
+    margin-top: 46px;
+
+
+}
+
+
+#mariokart6 {
+    height:100%;
+    width: 250px;
+    float: left;
+        
+}
+
+#mariokart6 img {
+    margin-left: 5px;
+    margin-top: 31px;
+
+}
+
+#mariokart7 {
+    height:100%;
+    width: 250px;
+    float: left;
+         -webkit-filter: grayscale(1);
+
+}
+
+#mariokart7 img {
+    margin-left: 5px;
+    margin-top: 48px;
+
+}
+
+#mariokart8 {
+    height:100%;
+    width: 250px;
+    float: left;
+         -webkit-filter: grayscale(1);
+
+}
+
+
+#mariokart8:hover {
+}
+
+#mariokart8 img {
+    margin-left: 5px;
+    margin-top: 39px;
+
+}
+
+
+
+#svgs {
+}
+
+
