@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Reloj con cuenta regresiva, JavaScript</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+	<style>
+
+
+.bloquedias{
+	margin-left: 30px;
+}
+
+#dias {
+	font-size: 60px;
+}
+.diastexto {
+	font-size: 30px;
+	text-align: center;
+}
+.contador {
+	width: 90px;
+}
+
+.bloquecontador {
+	margin-left: 30px;
+	width: 50px;
+	float: left;
+}
+
+		</style>
+</head>
+<body>
+
+
+
+
+					<div class="bloquedias">
+						<h2 id="dias">00</h2>
+						<span class="diastexto">DÍAS</span><br>
+					</div>
+					<div class="bloquecontador">
+						<h2 class="contador" id="horas">00</h2>
+						<span class="">HORAS</span>
+					</div>
+					<div class="bloquecontador">
+						<h2 class="contador" id="min">00</h2>
+						<span class="pre block">MINUTOS</span>
+					</div>
+					<div class="bloquecontador">
+						<h2 class="contador" id="seg">00</h2>
+						<span class="pre block">SEGUNDOS</span>
+					</div>
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="count.js"></script>
+</body>
+</html>
